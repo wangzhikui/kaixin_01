@@ -13,10 +13,9 @@
 | 前端框架 | Vue 3 + Composition API |
 | 构建工具 | Vite |
 | 路由 | Vue Router |
-| Markdown | markdown-it |
 | 内容管理 | Notion（数据来源） |
 | 版本管理 | Git |
-| 部署 | 服务器 Git Hook 自动拉取 |
+| 部署 | Aliyun 海外服务器 Linux，Git 拉取部署 |
 
 ## 项目结构
 
