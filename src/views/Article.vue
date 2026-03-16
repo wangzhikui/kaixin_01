@@ -1,8 +1,8 @@
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import MarkdownIt from 'markdown-it'
-import { articles } from '../data/articles'
+import { articlesList } from '../data/articles-list'
 
 const md = new MarkdownIt({
   html: true,
@@ -12,23 +12,48 @@ const md = new MarkdownIt({
 
 const route = useRoute()
 const router = useRouter()
+const articleContent = ref('')
+const loading = ref(true)
 
 // 页面加载时滚动到顶部
-onMounted(() => {
+onMounted(async () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
 })
 
 // 根据ID获取文章
 const article = computed(() => {
   const id = parseInt(route.params.id)
-  return articles.find(a => a.id === id) || articles[0]
+  return articlesList.find(a => a.id === id) || articlesList[0]
 })
+
+// 动态加载 Markdown 文件
+const loadContent = async () => {
+  if (!article.value) {
+    loading.value = false
+    return
+  }
+
+  try {
+    // 使用动态 import 加载 Markdown 文件
+    const modules = import.meta.glob('../articles/*.md', { query: '?raw', import: 'default', eager: true })
+    const filename = article.value.filename
+    const content = modules[`../articles/${filename}`]
+    articleContent.value = content || ''
+  } catch (e) {
+    console.error('加载文章内容失败:', e)
+    articleContent.value = ''
+  }
+  loading.value = false
+}
 
 // 渲染Markdown内容
 const renderedContent = computed(() => {
-  if (!article.value) return ''
-  return md.render(article.value.content)
+  if (!articleContent.value) return ''
+  return md.render(articleContent.value)
 })
+
+// 加载内容
+loadContent()
 
 function goBack() {
   router.push('/')
@@ -82,15 +107,16 @@ function goBack() {
 
         <header class="article-header">
           <div class="article-meta">
-            <span class="article-category">{{ article.category }}</span>
-            <span class="article-date">{{ article.date }}</span>
-            <span class="read-time">{{ article.readTime }} 阅读</span>
+            <span class="article-category">{{ article?.category || 'OpenClaw' }}</span>
+            <span class="article-date">{{ article?.date }}</span>
+            <span class="read-time">{{ article?.readTime }} 阅读</span>
           </div>
-          <h1>{{ article.title }}</h1>
-          <p class="article-excerpt">{{ article.excerpt }}</p>
+          <h1>{{ article?.title }}</h1>
+          <p class="article-excerpt">{{ article?.excerpt }}</p>
         </header>
 
-        <div class="article-content" v-html="renderedContent"></div>
+        <div v-if="loading" class="loading">加载中...</div>
+        <div v-else class="article-content" v-html="renderedContent"></div>
       </div>
     </article>
 
@@ -226,6 +252,12 @@ function goBack() {
   font-size: 1.15rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  color: var(--color-text-muted);
 }
 
 .article-content {

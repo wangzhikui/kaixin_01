@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { articles, quickLinks } from '../data/articles'
+import { articlesList } from '../data/articles-list'
 import { navigationPreview } from '../data/navigation'
 
 const router = useRouter()
@@ -129,7 +129,7 @@ function scrollToTop() {
         </div>
         <div class="articles-grid">
           <article
-            v-for="(article, index) in articles"
+            v-for="(article, index) in articlesList"
             :key="article.id"
             class="article-card"
             :style="{ animationDelay: `${index * 0.05}s` }"

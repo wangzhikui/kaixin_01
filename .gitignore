@@ -12,6 +12,15 @@ dist
 dist-ssr
 *.local
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# 同步的文章文件（包含敏感内容，不提交）
+src/articles/
+src/data/articles-list.js
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
