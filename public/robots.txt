@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.wangdongwei.com/sitemap.xml
+
+# Disallow sensitive paths
+Disallow: /node_modules/
+Disallow: /dist/
