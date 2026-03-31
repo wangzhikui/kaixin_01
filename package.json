@@ -10,8 +10,13 @@
     "sync": "node scripts/sync-notion.cjs"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "@kangc/v-md-editor": "^2.3.18",
+    "axios": "^1.14.0",
+    "element-plus": "^2.13.6",
     "markdown-it": "^14.1.1",
     "vue": "^3.5.25",
+    "vue-draggable-plus": "^0.6.1",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {

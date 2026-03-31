@@ -3,6 +3,8 @@ import { computed, onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import MarkdownIt from 'markdown-it'
 import { articlesList } from '../data/articles-list'
+import AppHeader from '../components/AppHeader.vue'
+import AppFooter from '../components/AppFooter.vue'
 
 const md = new MarkdownIt({
   html: true,
@@ -63,42 +65,7 @@ function goBack() {
 <template>
   <div class="article-page">
     <!-- 导航 -->
-    <nav class="navbar">
-      <div class="container nav-content">
-        <div class="logo" @click="goBack" style="cursor: pointer;">
-          <div class="dolphin-logo">
-            <svg viewBox="0 0 100 100" class="dolphin-svg">
-              <defs>
-                <linearGradient id="dolphinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#0099CC;stop-opacity:1" />
-                </linearGradient>
-                <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#FF6700;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#FF8C1A;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-              <rect x="10" y="40" width="80" height="50" rx="8" fill="url(#chipGrad)" opacity="0.9"/>
-              <rect x="15" y="45" width="70" height="40" rx="4" fill="#0f0f23"/>
-              <line x1="25" y1="55" x2="75" y2="55" stroke="#00D4FF" stroke-width="1.5" opacity="0.8"/>
-              <line x1="25" y1="65" x2="75" y2="65" stroke="#00D4FF" stroke-width="1.5" opacity="0.6"/>
-              <line x1="25" y1="75" x2="75" y2="75" stroke="#00D4FF" stroke-width="1.5" opacity="0.4"/>
-              <circle cx="25" cy="55" r="3" fill="#00D4FF"/>
-              <circle cx="75" cy="55" r="3" fill="#00D4FF"/>
-              <path d="M30 28 Q35 15, 50 18 Q65 12, 75 25 Q82 35, 78 42 Q72 48, 65 45 Q58 42, 55 48 Q50 55, 45 52 Q38 48, 35 38 Q32 32, 30 28" fill="url(#dolphinGrad)" opacity="0.95"/>
-              <circle cx="58" cy="28" r="2.5" fill="#0f0f23"/>
-            </svg>
-          </div>
-          <span class="logo-text">AI老魁</span>
-        </div>
-        <div class="nav-links">
-          <a href="/#tutorials">OpenClaw实战笔记</a>
-          <a href="/#navigation">AI网址导航</a>
-          <a href="/#about">关于</a>
-          <a href="/#contact" class="btn btn-primary nav-btn">联系我</a>
-        </div>
-      </div>
-    </nav>
+    <AppHeader />
 
     <!-- 文章内容 -->
     <article class="article-container">
@@ -121,13 +88,7 @@ function goBack() {
     </article>
 
     <!-- 底部 -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-bottom">
-          <p>&copy; {{ new Date().getFullYear() }} AI老魁. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+    <AppFooter />
   </div>
 </template>
 
@@ -135,68 +96,6 @@ function goBack() {
 .article-page {
   min-height: 100vh;
   background: var(--color-bg-secondary);
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  padding: 16px 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--color-border-light);
-}
-
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.dolphin-logo {
-  width: 40px;
-  height: 40px;
-}
-
-.dolphin-svg {
-  width: 100%;
-  height: 100%;
-}
-
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-warm));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.nav-links a {
-  font-weight: 500;
-  color: var(--color-text-secondary);
-}
-
-.nav-links a:hover {
-  color: var(--color-accent-primary);
-}
-
-.nav-btn {
-  padding: 10px 20px;
 }
 
 .article-container {
@@ -229,8 +128,8 @@ function goBack() {
 
 .article-category {
   padding: 4px 12px;
-  background: rgba(255, 103, 0, 0.1);
-  color: var(--color-accent-primary);
+  background: rgba(79, 70, 229, 0.1);
+  color: var(--color-primary);
   border-radius: 50px;
   font-size: 0.8rem;
   font-weight: 500;
@@ -352,21 +251,6 @@ function goBack() {
   margin: 20px 0;
   color: var(--color-text-secondary);
   font-style: italic;
-}
-
-.footer {
-  background: var(--color-text-primary);
-  color: white;
-  padding: 32px 0;
-}
-
-.footer-bottom {
-  text-align: center;
-}
-
-.footer-bottom p {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.875rem;
 }
 
 @media (max-width: 768px) {

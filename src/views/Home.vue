@@ -1,17 +1,62 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { articlesList } from '../data/articles-list'
-import { navigationPreview } from '../data/navigation'
+import { categoriesApi, linksApi } from '../api'
+import AppHeader from '../components/AppHeader.vue'
+import AppFooter from '../components/AppFooter.vue'
 
 const router = useRouter()
 const isVisible = ref(false)
-const currentYear = new Date().getFullYear()
+const categories = ref([])
+const links = ref([])
 
-onMounted(() => {
+// Top 20 AI Tools - Current popular AI websites
+const topAiTools = [
+  { name: 'Claude', url: 'https://claude.ai/', desc: 'Anthropic开发的AI助手，擅长写作、分析和代码', logo: 'https://claude.ai/favicon.ico' },
+  { name: 'ChatGPT', url: 'https://chatgpt.com/', desc: 'OpenAI开发的对话式AI，支持多模态交互', logo: 'https://chatgpt.com/favicon.ico' },
+  { name: 'Cursor', url: 'https://cursor.com/', desc: 'AI驱动的代码编辑器，集成GPT-4和Claude', logo: 'https://cursor.com/favicon.ico' },
+  { name: 'Midjourney', url: 'https://www.midjourney.com/', desc: '强大的AI图像生成工具，创意设计首选', logo: 'https://www.midjourney.com/favicon.ico' },
+  { name: 'Stable Diffusion', url: 'https://stability.ai/', desc: '开源AI图像生成模型，支持本地部署', logo: 'https://stability.ai/favicon.ico' },
+  { name: 'GitHub Copilot', url: 'https://github.com/features/copilot', desc: '微软/OpenAI开发的AI编程助手', logo: 'https://github.githubassets.com/favicons/favicon.svg' },
+  { name: 'Notion AI', url: 'https://www.notion.so/product/ai', desc: 'Notion集成的AI写作助手', logo: 'https://www.notion.so/images/favicon.ico' },
+  { name: 'Perplexity', url: 'https://www.perplexity.ai/', desc: 'AI搜索引擎，实时获取最新信息', logo: 'https://www.perplexity.ai/favicon.ico' },
+  { name: 'Gemini', url: 'https://gemini.google.com/', desc: 'Google开发的多模态AI助手', logo: 'https://gemini.google.com/favicon.ico' },
+  { name: 'Copilot', url: 'https://copilot.microsoft.com/', desc: '微软AI助手，集成Bing搜索能力', logo: 'https://copilot.microsoft.com/favicon.ico' },
+  { name: 'Character.AI', url: 'https://character.ai/', desc: 'AI角色扮演和对话平台', logo: 'https://character.ai/favicon.ico' },
+  { name: 'Kimi', url: 'https://kimi.moonshot.cn/', desc: '月之暗面开发的AI助手，超长上下文', logo: 'https://kimi.moonshot.cn/favicon.ico' },
+  { name: '智谱AI', url: 'https://www.zhipuai.cn/', desc: '国产大模型，GLM系列模型提供商', logo: 'https://www.zhipuai.cn/favicon.ico' },
+  { name: '通义千问', url: 'https://tongyi.aliyun.com/', desc: '阿里云开发的大语言模型', logo: 'https://tongyi.aliyun.com/favicon.ico' },
+  { name: '文心一言', url: 'https://yiyan.baidu.com/', desc: '百度开发的生成式AI产品', logo: 'https://yiyan.baidu.com/favicon.ico' },
+  { name: '讯飞星火', url: 'https://xinghuo.xfyun.cn/', desc: '科大讯飞开发的认知智能大模型', logo: 'https://xinghuo.xfyun.cn/favicon.ico' },
+  { name: 'Dify', url: 'https://dify.ai/', desc: '开源的LLM应用开发平台', logo: 'https://dify.ai/favicon.ico' },
+  { name: 'Coze', url: 'https://www.coze.cn/', desc: '字节跳动开发的AI应用平台', logo: 'https://www.coze.cn/favicon.ico' },
+  { name: 'LangChain', url: 'https://www.langchain.com/', desc: '开发LLM应用的框架和工具', logo: 'https://www.langchain.com/favicon.ico' },
+  { name: 'Lovable', url: 'https://lovable.dev/', desc: 'AI驱动的应用构建平台', logo: 'https://lovable.dev/favicon.ico' }
+]
+
+onMounted(async () => {
+  try {
+    const [catsData, linksData] = await Promise.all([
+      categoriesApi.getAll(),
+      linksApi.getAll()
+    ])
+    categories.value = (catsData || []).sort((a, b) => (a.order || 0) - (b.order || 0))
+    links.value = linksData || []
+  } catch (error) {
+    console.error('Failed to load navigation data:', error)
+  }
   setTimeout(() => {
     isVisible.value = true
   }, 100)
+})
+
+// 导航预览数据 - 取前6个分类
+const navigationPreview = computed(() => {
+  return categories.value.slice(0, 6).map(cat => ({
+    ...cat,
+    sites: links.value.filter(link => link.categoryId === cat.id).slice(0, 3)
+  }))
 })
 
 function goToArticle(id) {
@@ -25,60 +70,19 @@ function goToNavigation() {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
+
+function handleImgError(e) {
+  // Fallback for missing favicons
+  e.target.style.display = 'none'
+}
 </script>
 
 <template>
   <div class="app">
     <!-- Navigation -->
-    <nav class="navbar">
-      <div class="container nav-content">
-        <div class="logo" @click="scrollToTop">
-          <div class="dolphin-logo">
-            <svg viewBox="0 0 100 100" class="dolphin-svg">
-              <defs>
-                <linearGradient id="dolphinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#0099CC;stop-opacity:1" />
-                </linearGradient>
-                <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#FF6700;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#FF8C1A;stop-opacity:1" />
-                </linearGradient>
-              </defs>
-              <!-- Chip base -->
-              <rect x="10" y="40" width="80" height="50" rx="8" fill="url(#chipGrad)" opacity="0.9"/>
-              <rect x="15" y="45" width="70" height="40" rx="4" fill="#0f0f23"/>
-              <!-- Circuit lines -->
-              <line x1="25" y1="55" x2="75" y2="55" stroke="#00D4FF" stroke-width="1.5" opacity="0.8"/>
-              <line x1="25" y1="65" x2="75" y2="65" stroke="#00D4FF" stroke-width="1.5" opacity="0.6"/>
-              <line x1="25" y1="75" x2="75" y2="75" stroke="#00D4FF" stroke-width="1.5" opacity="0.4"/>
-              <!-- Nodes -->
-              <circle cx="25" cy="55" r="3" fill="#00D4FF"/>
-              <circle cx="75" cy="55" r="3" fill="#00D4FF"/>
-              <circle cx="35" cy="65" r="2.5" fill="#00D4FF"/>
-              <circle cx="65" cy="65" r="2.5" fill="#00D4FF"/>
-              <circle cx="45" cy="75" r="2" fill="#00D4FF"/>
-              <circle cx="55" cy="75" r="2" fill="#00D4FF"/>
-              <!-- Dolphin silhouette -->
-              <path d="M30 28 Q35 15, 50 18 Q65 12, 75 25 Q82 35, 78 42 Q72 48, 65 45 Q58 42, 55 48 Q50 55, 45 52 Q38 48, 35 38 Q32 32, 30 28"
-                    fill="url(#dolphinGrad)" opacity="0.95"/>
-              <!-- Dolphin eye -->
-              <circle cx="58" cy="28" r="2.5" fill="#0f0f23"/>
-              <circle cx="59" cy="27" r="1" fill="#fff"/>
-            </svg>
-          </div>
-          <span class="logo-text">AI老魁</span>
-        </div>
-        <div class="nav-links">
-          <a href="#tutorials">OpenClaw实战笔记</a>
-          <a href="#navigation">AI网址导航</a>
-          <a href="#about">关于</a>
-          <a href="#contact" class="btn btn-primary nav-btn">联系我</a>
-        </div>
-      </div>
-    </nav>
+    <AppHeader />
 
-    <!-- Hero Section - OpenClaw教程 -->
+    <!-- Hero Section - AI Coding -->
     <section class="hero">
       <div class="hero-bg">
         <div class="orb orb-1"></div>
@@ -87,33 +91,49 @@ function scrollToTop() {
       </div>
       <div class="container hero-content" :class="{ visible: isVisible }">
         <div class="hero-badge">
-          <span>🆕 最新教程</span>
+          <span>🆕 最新更新</span>
         </div>
         <h1 class="hero-title">
-          OpenClaw<br />
-          <span class="highlight">完全指南</span>
+          AI Coding<br />
+          <span class="highlight">实战笔记</span>
         </h1>
         <p class="hero-desc">
-          带你从零开始掌握OpenClaw——你的个人AI助手。安装配置、Skills扩展、多Agent架构，
-          这里有你需要的一切。
+          探索 AI 编程的最佳实践。从 Claude Code、Cursor 到 OpenClaw，记录最实用的 AI 编码技巧，
+          让 AI 成为你的得力助手。
         </p>
         <div class="hero-actions">
           <a href="#tutorials" class="btn btn-primary">
             开始学习
             <span class="btn-arrow">→</span>
           </a>
-          <a href="#about" class="btn btn-secondary">了解更多</a>
+          <a href="#toptools" class="btn btn-secondary">探索工具</a>
         </div>
       </div>
     </section>
 
-    <!-- Quick Links -->
-    <section class="quick-links">
+    <!-- Top AI Tools Section -->
+    <section id="toptools" class="top-tools section">
       <div class="container">
-        <div class="links-grid">
-          <a v-for="link in quickLinks" :key="link.name" :href="link.url" target="_blank" class="link-card">
-            <span class="link-icon">{{ link.icon }}</span>
-            <span class="link-name">{{ link.name }}</span>
+        <div class="section-header">
+          <span class="section-tag">热门工具</span>
+          <h2>🔥 Top 20 AI 工具</h2>
+          <p>当前最火的AI工具一网打尽，快速访问提升效率</p>
+        </div>
+        <div class="tools-grid">
+          <a
+            v-for="tool in topAiTools"
+            :key="tool.name"
+            :href="tool.url"
+            target="_blank"
+            class="tool-card"
+          >
+            <div class="tool-logo">
+              <img :src="tool.logo" :alt="tool.name" @error="handleImgError" />
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">{{ tool.name }}</span>
+              <span class="tool-desc">{{ tool.desc }}</span>
+            </div>
           </a>
         </div>
       </div>
@@ -124,8 +144,8 @@ function scrollToTop() {
       <div class="container">
         <div class="section-header">
           <span class="section-tag">学习路径</span>
-          <h2>OpenClaw 实战笔记</h2>
-          <p>从入门到进阶，系统学习OpenClaw的使用</p>
+          <h2>AI 实战笔记</h2>
+          <p>从入门到进阶，系统学习 AI 编程工具的使用技巧</p>
         </div>
         <div class="articles-grid">
           <article
@@ -206,8 +226,8 @@ function scrollToTop() {
                 <svg viewBox="0 0 200 200" class="circuit-svg">
                   <defs>
                     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" style="stop-color:#FF6700" />
-                      <stop offset="100%" style="stop-color:#00D4FF" />
+                      <stop offset="0%" style="stop-color:#14B8A6" />
+                      <stop offset="100%" style="stop-color:#2DD4BF" />
                     </linearGradient>
                   </defs>
                   <!-- Horizontal lines -->
@@ -220,14 +240,14 @@ function scrollToTop() {
                   <line x1="100" y1="50" x2="100" y2="140" stroke="url(#lineGrad)" stroke-width="2" class="circuit-line"/>
                   <line x1="150" y1="50" x2="150" y2="140" stroke="url(#lineGrad)" stroke-width="2" class="circuit-line"/>
                   <!-- Nodes -->
-                  <circle cx="50" cy="50" r="6" fill="#FF6700" class="node node-1"/>
-                  <circle cx="100" cy="80" r="6" fill="#00D4FF" class="node node-2"/>
-                  <circle cx="150" cy="110" r="6" fill="#FF6700" class="node node-3"/>
-                  <circle cx="50" cy="140" r="6" fill="#00D4FF" class="node node-4"/>
-                  <circle cx="100" cy="110" r="4" fill="#FF6700" class="node node-5"/>
-                  <circle cx="150" cy="50" r="4" fill="#00D4FF" class="node node-6"/>
+                  <circle cx="50" cy="50" r="6" fill="#14B8A6" class="node node-1"/>
+                  <circle cx="100" cy="80" r="6" fill="#2DD4BF" class="node node-2"/>
+                  <circle cx="150" cy="110" r="6" fill="#14B8A6" class="node node-3"/>
+                  <circle cx="50" cy="140" r="6" fill="#2DD4BF" class="node node-4"/>
+                  <circle cx="100" cy="110" r="4" fill="#14B8A6" class="node node-5"/>
+                  <circle cx="150" cy="50" r="4" fill="#2DD4BF" class="node node-6"/>
                   <!-- Chip center -->
-                  <rect x="60" y="60" width="80" height="60" rx="8" fill="none" stroke="#FF6700" stroke-width="2" class="chip-border"/>
+                  <rect x="60" y="60" width="80" height="60" rx="8" fill="none" stroke="#14B8A6" stroke-width="2" class="chip-border"/>
                   <text x="100" y="95" text-anchor="middle" fill="#fff" font-size="14" font-weight="bold">AI</text>
                 </svg>
               </div>
@@ -239,19 +259,18 @@ function scrollToTop() {
           </div>
           <div class="about-text">
             <span class="section-tag">关于博主</span>
-            <h2>探索 AI 的无限可能</h2>
+            <h2>探索 AI Coding 的无限可能</h2>
             <p>
-              我是AI老魁，一个热爱技术和创新的开发者。这个网站记录了我学习和使用OpenClaw的过程，
-              希望能够帮助更多想要入门AI助手的朋友。
+              我是ITLK，一个热爱技术和创新的开发者。这个网站记录了我学习和使用各种 AI 编程工具的过程，
+              希望能够帮助更多想要入门 AI Coding 的朋友。
             </p>
             <p>
-              OpenClaw是一个强大的个人AI助手框架，支持多Agent架构、丰富的Skills扩展，
-              以及多种消息渠道集成。让我们一起探索AI的奥秘！
+              从 Claude Code、Cursor 到 OpenClaw，这些 AI 工具正在改变我们写代码的方式。让我们一起探索 AI 编程的奥秘！
             </p>
             <div class="about-features">
               <div class="about-feature">
                 <span class="check">✓</span>
-                <span>持续更新OpenClaw实战笔记</span>
+                <span>持续更新AI实战笔记</span>
               </div>
               <div class="about-feature">
                 <span class="check">✓</span>
@@ -293,119 +312,13 @@ function scrollToTop() {
     </button>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <div class="logo">
-              <div class="dolphin-logo-small">
-                <svg viewBox="0 0 100 100" class="dolphin-svg-small">
-                  <path d="M30 28 Q35 15, 50 18 Q65 12, 75 25 Q82 35, 78 42 Q72 48, 65 45 Q58 42, 55 48 Q50 55, 45 52 Q38 48, 35 38 Q32 32, 30 28"
-                        fill="#FF6700"/>
-                  <circle cx="58" cy="28" r="2.5" fill="#0f0f23"/>
-                </svg>
-              </div>
-              <span class="logo-text">AI老魁</span>
-            </div>
-            <p>探索 AI 的无限可能</p>
-          </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h4>学习</h4>
-              <a href="#tutorials">实战笔记</a>
-              <a href="#navigation">AI网址导航</a>
-              <a href="#">安装指南</a>
-              <a href="#">命令手册</a>
-            </div>
-            <div class="footer-column">
-              <h4>资源</h4>
-              <a href="https://openclaw.ai/" target="_blank">OpenClaw官网</a>
-              <a href="https://clawhub.ai/" target="_blank">ClawHub</a>
-              <a href="https://docs.openclaw.ai/" target="_blank">官方文档</a>
-            </div>
-            <div class="footer-column">
-              <h4>联系</h4>
-              <a href="#">微信</a>
-              <a href="#">邮箱</a>
-              <a href="#">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; {{ currentYear }} AI老魁. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+    <AppFooter />
   </div>
 </template>
 
 <style scoped>
 .app {
   overflow-x: hidden;
-}
-
-/* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  padding: 16px 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--color-border-light);
-}
-
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-}
-
-.dolphin-logo {
-  width: 40px;
-  height: 40px;
-}
-
-.dolphin-svg {
-  width: 100%;
-  height: 100%;
-}
-
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-warm));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-.nav-links a {
-  font-weight: 500;
-  color: var(--color-text-secondary);
-}
-
-.nav-links a:hover {
-  color: var(--color-accent-primary);
-}
-
-.nav-btn {
-  padding: 10px 20px;
 }
 
 /* Hero */
@@ -416,6 +329,7 @@ function scrollToTop() {
   position: relative;
   padding: 120px 0 60px;
   overflow: hidden;
+  background: linear-gradient(135deg, var(--color-primary-bg) 0%, white 50%, var(--color-bg-secondary) 100%);
 }
 
 .hero-bg {
@@ -428,29 +342,29 @@ function scrollToTop() {
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .orb-1 {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(255, 103, 0, 0.25) 0%, transparent 70%);
-  top: -200px;
-  right: -100px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.2) 0%, transparent 70%);
+  top: -250px;
+  right: -150px;
 }
 
 .orb-2 {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(255, 140, 26, 0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.15) 0%, transparent 70%);
   bottom: -100px;
   left: -100px;
 }
 
 .orb-3 {
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(255, 87, 34, 0.15) 0%, transparent 70%);
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.1) 0%, transparent 70%);
   top: 40%;
   left: 30%;
 }
@@ -471,8 +385,8 @@ function scrollToTop() {
 .hero-badge {
   display: inline-block;
   padding: 8px 16px;
-  background: rgba(255, 103, 0, 0.1);
-  border: 1px solid rgba(255, 103, 0, 0.3);
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.2);
   border-radius: 50px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -489,7 +403,7 @@ function scrollToTop() {
 }
 
 .hero-title .highlight {
-  background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-warm));
+  background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -526,44 +440,75 @@ function scrollToTop() {
   font-size: 1rem;
 }
 
-/* Quick Links */
-.quick-links {
-  background: var(--color-bg-secondary);
-  padding: 40px 0;
-  border-top: 1px solid var(--color-border-light);
-  border-bottom: 1px solid var(--color-border-light);
+/* Top AI Tools */
+.top-tools {
+  background: white;
+  padding: 80px 0;
 }
 
-.links-grid {
+.tools-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
 }
 
-.link-card {
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.tool-card:hover {
+  border-color: var(--color-accent-primary);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.15);
+  transform: translateY(-4px);
+}
+
+.tool-logo {
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 16px 20px;
-  background: white;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border-light);
-  transition: var(--transition-base);
+  justify-content: center;
+  margin-bottom: 12px;
 }
 
-.link-card:hover {
-  border-color: var(--color-accent-primary);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+.tool-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
-.link-icon {
-  font-size: 24px;
+.tool-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
 }
 
-.link-name {
-  font-weight: 500;
+.tool-name {
+  font-weight: 600;
+  font-size: 0.95rem;
   color: var(--color-text-primary);
+}
+
+.tool-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Tutorials */
@@ -580,7 +525,7 @@ function scrollToTop() {
 .section-tag {
   display: inline-block;
   padding: 6px 14px;
-  background: rgba(255, 103, 0, 0.1);
+  background: rgba(20, 184, 166, 0.1);
   border-radius: 50px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -603,10 +548,12 @@ function scrollToTop() {
 }
 
 .article-card {
-  background: white;
-  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl);
   padding: 28px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow-md);
   transition: var(--transition-base);
   animation: fadeInUp 0.6s ease forwards;
   opacity: 0;
@@ -614,9 +561,9 @@ function scrollToTop() {
 }
 
 .article-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-accent-primary);
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
 }
 
 .article-meta {
@@ -628,7 +575,7 @@ function scrollToTop() {
 
 .article-category {
   padding: 4px 10px;
-  background: rgba(255, 103, 0, 0.1);
+  background: rgba(20, 184, 166, 0.1);
   color: var(--color-accent-primary);
   border-radius: 50px;
   font-size: 0.75rem;
@@ -670,12 +617,12 @@ function scrollToTop() {
 .read-more {
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--color-accent-primary);
+  color: var(--color-primary);
 }
 
 /* Navigation */
 .navigation {
-  background: var(--color-bg-secondary);
+  background: white;
 }
 
 .nav-categories-grid {
@@ -685,16 +632,18 @@ function scrollToTop() {
 }
 
 .nav-category-card {
-  background: white;
-  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl);
   padding: 24px;
-  border: 1px solid var(--color-border-light);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow-md);
   transition: var(--transition-base);
 }
 
 .nav-category-card:hover {
-  border-color: var(--color-accent-primary);
-  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-xl);
   transform: translateY(-4px);
 }
 
@@ -704,7 +653,7 @@ function scrollToTop() {
   gap: 12px;
   margin-bottom: 16px;
   padding-bottom: 12px;
-  border-bottom: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .category-icon {
@@ -733,7 +682,7 @@ function scrollToTop() {
 }
 
 .site-link:hover {
-  background: rgba(255, 103, 0, 0.1);
+  background: rgba(79, 70, 229, 0.08);
 }
 
 .site-name {
@@ -762,7 +711,7 @@ function scrollToTop() {
 
 /* About */
 .about {
-  background: white;
+  background: linear-gradient(135deg, var(--color-primary-bg) 0%, white 100%);
 }
 
 .about-content {
@@ -781,27 +730,27 @@ function scrollToTop() {
   position: relative;
   width: 100%;
   aspect-ratio: 1;
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-2xl);
   overflow: hidden;
-  background: linear-gradient(145deg, #0a0a1a 0%, #1a1a3e 50%, #0a0a1a 100%);
+  background: linear-gradient(145deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
   box-shadow:
-    0 25px 60px rgba(0, 0, 0, 0.4),
+    0 25px 60px rgba(79, 70, 229, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .chip-layer {
   position: absolute;
   inset: 0;
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-2xl);
 }
 
 .chip-layer.layer-1 {
-  background: linear-gradient(135deg, rgba(255, 103, 0, 0.2), transparent);
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.3), transparent);
   animation: layer-rotate 20s linear infinite;
 }
 
 .chip-layer.layer-2 {
-  background: radial-gradient(circle at 30% 30%, rgba(0, 212, 255, 0.1), transparent);
+  background: radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.2), transparent);
 }
 
 .chip-layer.layer-3 {
@@ -865,7 +814,7 @@ function scrollToTop() {
   position: absolute;
   width: 4px;
   height: 4px;
-  background: #00D4FF;
+  background: var(--color-primary-light);
   border-radius: 50%;
   animation: particle-float 6s ease-in-out infinite;
 }
@@ -881,7 +830,7 @@ function scrollToTop() {
   right: 25%;
   width: 6px;
   height: 6px;
-  background: #FF6700;
+  background: var(--color-accent-primary);
   animation-delay: 2s;
 }
 
@@ -932,7 +881,7 @@ function scrollToTop() {
 .about-feature .check {
   width: 24px;
   height: 24px;
-  background: var(--color-accent-primary);
+  background: var(--color-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -944,15 +893,15 @@ function scrollToTop() {
 
 /* CTA */
 .cta {
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
 }
 
 .cta-card {
-  background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-warm));
-  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  border-radius: var(--radius-2xl);
   padding: 80px;
   text-align: center;
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 25px 50px -12px rgba(79, 70, 229, 0.25);
   position: relative;
   overflow: hidden;
 }
@@ -964,7 +913,7 @@ function scrollToTop() {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 50%);
   animation: pulse-gentle 4s ease-in-out infinite;
 }
 
@@ -993,11 +942,12 @@ function scrollToTop() {
 
 .cta-actions .btn-primary {
   background: white;
-  color: var(--color-accent-primary);
+  color: var(--color-primary);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .cta-actions .btn-primary:hover {
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
   transform: translateY(-2px);
 }
 
@@ -1012,77 +962,6 @@ function scrollToTop() {
   border-color: white;
 }
 
-/* Footer */
-.footer {
-  background: var(--color-text-primary);
-  color: white;
-  padding: 80px 0 32px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 60px;
-}
-
-.footer-brand .logo-text {
-  color: white;
-  background: none;
-  -webkit-text-fill-color: white;
-}
-
-.footer-brand p {
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 12px;
-}
-
-.dolphin-logo-small {
-  width: 24px;
-  height: 24px;
-}
-
-.dolphin-svg-small {
-  width: 100%;
-  height: 100%;
-}
-
-.footer-links {
-  display: flex;
-  gap: 80px;
-}
-
-.footer-column {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.footer-column h4 {
-  color: white;
-  font-size: 1rem;
-  margin-bottom: 8px;
-}
-
-.footer-column a {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.95rem;
-}
-
-.footer-column a:hover {
-  color: var(--color-accent-primary);
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 32px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-bottom p {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 0.875rem;
-}
-
 /* Back to Top Button */
 .back-to-top {
   position: fixed;
@@ -1090,14 +969,14 @@ function scrollToTop() {
   right: 40px;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #FF6700 0%, #FF8C1A 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   color: white;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   font-size: 20px;
-  box-shadow: 0 4px 16px rgba(255, 103, 0, 0.35);
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+  transition: all 0.2s ease;
   z-index: 999;
   display: flex;
   align-items: center;
@@ -1105,8 +984,8 @@ function scrollToTop() {
 }
 
 .back-to-top:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 24px rgba(255, 103, 0, 0.5);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45);
+  transform: translateY(-2px);
 }
 
 .back-to-top span {

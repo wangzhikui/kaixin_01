@@ -1,0 +1,3001 @@
+{
+  "articles": [
+    {
+      "title": "ai网址导航",
+      "filename": "01-ai网址导航.md",
+      "categories": [
+        "OpenClaw"
+      ],
+      "status": "publish",
+      "order": 1,
+      "excerpt": "海外vps https://cloud.digitalocean.com/ google账号登录 https://www.hetzner.com/    大模型应用 https://www.an",
+      "readTime": "1 min",
+      "content": "## 海外vps\nhttps://cloud.digitalocean.com/\ngoogle账号登录\nhttps://www.hetzner.com/\n## 大模型应用\nhttps://www.anygen.io/home?invitation_code=4QMBAUQNUJXCXLZ\nhttps://jimeng.jianying.com/ai-tool/home?type=video 即梦AI /字节剪映\nhttps://turbodesk.xfyun.cn/\nhttps://readdy.ai/zh\n## openclaw\nhttps://github.com/VoltAgent/awesome-openclaw-skills/tree/main\nhttps://openclaw101.dev/\n## 平台\nhttps://www.anthropic.com/\nhttps://gemini.google.com/\nhttps://build.nvidia.com/\nhttps://platform.moonshot.cn/\nhttps://bigmodel.cn/\n## 大模型接口网关\nhttps://gptapi.asia/\n## 原型设计\nhttps://modao.cc/workspace/team/splpmqzz20pqoxoi\nhttps://www.figma.com/\nhttps://www.xingliu.art/\nhttps://pixso.cn/\nhttps://mixboard.google.com/projects\nhttps://excalidraw.com/\nhttps://ui-ux-pro-max-skill.nextlevelbuilder.io/\nhttps://www.pencil.dev/\nhttps://paperwebsite.com/\n## AI&Agent&Skills&MCP\nhttps://skills.sh/\nhttps://agentskills.io/home\nhttps://gofastmcp.com/getting-started/welcome\nhttps://mcpmarket.cn/\nhttps://www.aippt.cn/\nhttps://www.futurepedia.io/\nhttps://www.pulsemcp.com/servers\nhttps://skillhub.ai/\nhttps://skillhub.tencent.com/\n## 应用解决方案\nhttps://qoder.com/\nhttps://claude.ai/\nhttps://md2card.com/zh#google_vignette\nhttps://clawd.bot/\nhttps://molt.bot/\nhttps://openclaw.ai/\nhttps://www.moltbook.com/\nhttps://www.perplexity.ai/ 维基百科替代\nhttps://www.firecrawl.dev/\nhttps://mowen.cn/\nhttps://www.bohrium.com/\nhttps://opencode.ai/\nhttps://aistudio.google.com/?utm_source=toolify\nhttps://readdy.ai/zh\n## 研发\nhttps://weda.cloud.tencent.com.cn/index\nhttps://www.dcloud.io/\nhttps://uniapp.dcloud.net.cn/\nhttps://apifox.com/\nhttps://cursor.com/cn\nhttps://latentbox.com/zh\nhttps://crewai.org.cn/\nhttps://microsoft.github.io/autogen/stable/\nhttps://www.langchain.com/\nhttps://ollama.com/\n## paas平台&工作流平台\nhttps://www.volcengine.com/\nhttps://aistudio.baidu.com/overview\nhttps://www.miaoda.cn/\nhttps://www.coze.cn/\nhttps://dify.ai/zh\nhttps://n8n.io/\nhttps://streamlit.io/\n## 社区\nhttps://hub.baai.ac.cn/\nhttps://www.reddit.com/?feed=home\nhttps://www.tensorflow.org/?hl=zh-cn\nhttps://www.sgpjbg.com.cn/\nhttps://www.instagram.com/explore/\nhttps://www.facebook.com/\nhttps://ai-weekly.ai/\nhttps://discord.com/\n## 浏览器\nhttps://www.quark.cn/\nhttps://ima.qq.com/download/?webFrom=10000022&channel=10000022&bd_vid=10452179559342943903\nhttps://www.browserbase.com/\nhttps://www.deeplearning.ai/\nhttps://brightdata.com/\nhttps://atlasbrowser.net/zh-CN\n## 会议\nhttps://www.granola.ai/\n## 虚拟桌面\n通过h5方式链接远程虚拟桌面\nhttps://guacamole.apache.org/\n## 图谱\nhttps://vip.joinmap.ai/index\n## blog\nhttps://zara.faces.site/ai\nhttps://creatoreconomy.so/\n",
+      "category": "OpenClaw",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "openclaw",
+      "filename": "01-openclaw.md",
+      "content": "## 参考学习\nhttps://openclaw101.dev/\n## 开放平台\nhttps://open.bigmodel.cn/\nhttps://platform.minimaxi.com/user-center/payment/coding-plan\nhttps://open.feishu.cn/app/cli_a9142b002bf9dbc9/auth\nhttps://docs.openclaw.ai/zh-CN/channels/feishu\n## 常用命令\n```json\nopenclaw status          # 查看整体状态\nopenclaw gateway status  # 查看 Gateway 运行状态\nopenclaw health          # 健康检查\nopenclaw configure       # 重新配置（修改模型、频道等）\nopenclaw daemon restart  # 重启后台服务\nopenclaw daemon logs     # 查看运行日志\n\nopenclaw gateway install\nopenclaw gateway start\nopenclaw gateway stop\nopenclaw gateway restart\nopenclaw gateway uninstall\n\nopenclaw models status\nopenclaw models list\nopenclaw models set <model-or-alias>\nopenclaw models scan\n\nopenclaw sessions\nopenclaw sessions --active 120\nopenclaw sessions --json\n```\n## 配置文件位置\n~/.openclaw/openclaw.json\n模型配置文件/密钥配置\n~/.openclaw/agents/main/agent/auth-profiles.json\n\n## 安装skills&工具&第三方软件\nhttps://clawhub.ai/\n配置openclaw核心个性文件\n理解 AI 助手「灵魂」的三件套：SOUL.md / USER.md / AGENTS.md\n### 浏览器功能\nhttps://brave.com/zh/search/api/\n使用邮箱:wangzhikuia@126.com注册\n密码谷歌浏览器自动生成并保存在谷歌账号体系中\n### 虚拟组网工具\nhttps://tailscale.com/download\n## 问题一\n终端配置好了，网关也启动了，tui以及web都可以访问，安装了openclaw的client端，mac电脑。配置之后提示无法连接上网关。\n问题原因是新的客户端请求网关，需要在终端允许配对\n```shell\n查询有哪些设备配对了网关\n\nopenclaw devices list\n\n找到需要配对的，pending分类，使用如下命令配对\n\nopenclaw devices approve cb54c7f6-0e67-4482-ad24-f0b99f5723a7\n\n返回如下，则配对成功\n\nApproved 2ef52109a69fa5d1272d35e57df8a0ddc6df929a38485a0ae0f6e662493a79d5 (cb54c7f6-0e67-4482-ad24-f0b99f5723a7)\n```\n如图所示\n\n",
+      "order": 1,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "参考学习 https://openclaw101.dev/    开放平台 https://open.bigmodel.cn/ https://platform.minimaxi.com/use",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "3",
+      "title": "claude code使用",
+      "filename": "02-claude-code使用.md",
+      "content": "npm安装方式\n翻墙就不用使用镜像，如果使用国内ip要用镜像\n镜像地址：https://registry.npmmirror.com\n```bash\nsudo npm install -g @anthropic-ai/claude-code\n```\n\n安装完成后输入claude命令报错，提示无法访问anthropic service。因为默认访问的事anthropic的claude模型api\n我们配置国内的模型，配置方法可以修改配置文件或者使用如下可视化工具，他的原理也是修改对应的配置\n为claude code 配置模型的工具（如：minimax api key）\nhttps://github.com/farion1231/cc-switch/releases/tag/v3.10.3\n\n1，使用官方安装命令报错\n```json\ncurl -fsSL https://claude.ai/install.sh | bash\n```\nhttps://blog.csdn.net/huyuyang6688/article/details/157283719\nClaude Code 使用踩坑总结：代理配置、额度不足与模型切换\n2，mac使用brew安装提示claude-code不存在，提示去掉-code安装成功\n安装后直接在应用中增加了claude，但是终端无法使用claude，没有在bin中增加claude。到此没有进行下一步了，因为即时安装成功使用的时候也需要claude账号，目前还没有对中国区域开放账号注册\n3，vs code中试用claude code插件，配置智谱或者minimax的模型使用。\nvs code配置claude code方法\nhttps://blog.csdn.net/zooen2011/article/details/156657628\n智谱配置\n智谱开放平台申请API key\nhttps://open.bigmodel.cn/\n```json\n\"claudeCode.environmentVariables\": [\n      {\n        \"name\": \"ANTHROPIC_BASE_URL\",\n        \"value\": \"https://open.bigmodel.cn/api/anthropic\"\n      },\n      {\n        \"name\": \"ANTHROPIC_AUTH_TOKEN\",\n        \"value\": \"3d0a8cfbfb4782405604051c16e5b18b.FkC4wknXV7wmmqNI\"\n      },\n      {\n        \"name\": \"API_TIMEOUT_MS\",\n        \"value\": \"3000000\"\n      },\n      {\n        \"name\": \"CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC\",\n        \"value\": \"1\"\n      },\n      {\n        \"name\": \"ANTHROPIC_MODEL\",\n        \"value\": \"GLM-4.7\"\n      },\n      {\n        \"name\": \"ANTHROPIC_SMALL_FAST_MODEL\",\n        \"value\": \"GLM-4.7\"\n      },\n      {\n        \"name\": \"ANTHROPIC_DEFAULT_SONNET_MODEL\",\n        \"value\": \"GLM-4.7\"\n      },\n      {\n        \"name\": \"ANTHROPIC_DEFAULT_OPUS_MODEL\",\n        \"value\": \"GLM-4.7\"\n      },\n      {\n        \"name\": \"ANTHROPIC_DEFAULT_HAIKU_MODEL\",\n        \"value\": \"GLM-4.5-Air\"\n      }\n      \n    ]\n```\nMiniMax配置\nhttps://platform.minimaxi.com/docs/guides/text-ai-coding-tools#%E5%9C%A8-trae-%E4%B8%AD%E4%BD%BF%E7%94%A8-minimax-m2-5\n```json\n\"claudeCode.environmentVariables\": [\n\t{\n\t\t\"name\": \"ANTHROPIC_BASE_URL\",\n\t\t\"value\": \"https://api.minimaxi.com/anthropic\"\n\t},\n\t{\n\t\t\"name\": \"ANTHROPIC_AUTH_TOKEN\",\n\t\t\"value\": \"sk-cp-D1-4VSJwe084pq1nPUTobmToDERHYA1k5_rF8nHLTwTre5uvUHL9we59CYkP_pDFm36TXligirbHr65KALSeJXc5CyV2JEx0kz_SoGV1kc-dZs06w2qqis4\"\n\t},\n\t{\n\t\t\"name\": \"API_TIMEOUT_MS\",\n\t\t\"value\": \"3000000\"\n\t},\n\t{\n\t\t\"name\": \"CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC\",\n\t\t\"value\": \"1\"\n\t},\n\t{\n\t\t\"name\": \"ANTHROPIC_MODEL\",\n\t\t\"value\": \"MiniMax-M2.5\"\n\t},\n\t{\n\t\t\"name\": \"ANTHROPIC_SMALL_FAST_MODEL\",\n\t\t\"value\": \"MiniMax-M2.5\"\n\t},\n\t{\n\t\t\"name\": \"ANTHROPIC_DEFAULT_SONNET_MODEL\",\n\t\t\"value\": \"MiniMax-M2.5\"\n\t},\n\t{\n\t\t\"name\": \"ANTHROPIC_DEFAULT_OPUS_MODEL\",\n\t\t\"value\": \"MiniMax-M2.5\"\n\t},\n\t{\n\t\t\"name\": \"ANTHROPIC_DEFAULT_HAIKU_MODEL\",\n\t\t\"value\": \"MiniMax-M2.5\"\n\t}\n]\n```\n",
+      "order": 2,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "npm安装方式 翻墙就不用使用镜像，如果使用国内ip要用镜像 镜像地址：https://registry.npmmirror.com    bash sudo npm install -g @anth...",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "4",
+      "title": "openclaw全新安装",
+      "filename": "02-openclaw全新安装.md",
+      "content": "在一台全新的mac电脑上安装openclaw包括配套的开发环境\n## nodejs\n官方建议安装方式之一是nodejs安装\n```bash\n# Install OpenClaw\nnpm i -g openclaw\n# Meet your lobster\nopenclaw onboard\n```\n先下载nodejs安装\nhttps://nodejs.org/zh-cn\n找到符合本电脑的版本，mac有intel芯片和苹果芯片两个，本人是intel芯片。网站会自动检测，基本上直接下载即可。当前版本是v24.14.0\n1，可以下载安装包安装\n2，按照nodejs给出的安装方式使用nvm安装\n```bash\n# 下载并安装 nvm：\ncurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash\n\n# 代替重启 shell\n\\. \"$HOME/.nvm/nvm.sh\"\n\n# 下载并安装 Node.js：\nnvm install 24\n\n# 验证 Node.js 版本：\nnode -v # Should print \"v24.14.0\".\n\n# 验证 npm 版本：\nnpm -v # Should print \"11.9.0\".\n\n```\n提示：官方提示使用nvm安装，社区方案也有使用brew。很多mac上的应用都是用brew安装和管理，建议使用brew\n```bash\n# 下载并安装 Homebrew\ncurl -o- https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash\n# 下载并安装 Node.js：\nbrew install node@24\n# 验证 Node.js 版本：\nnode -v # Should print \"v24.14.0\".\n# 验证 npm 版本：\nnpm -v # Should print \"11.9.0\".\n```\n如果想安装多个nodejs版本，可以使用n或者nvm工具来管理，nvm是官方，n是社区。安装方式这里不赘述\n## 安装openclaw\nhttps://openclaw.ai/\n使用官方推荐方式之一：npm安装\n安装之前建议提前准备\n1，大模型APIkey：这里选择minimax\n打开Minimax开放平台，购买code plan，最便宜的套餐一个月29块钱，有需要其他平台的自行申请\n\n2，消息渠道：这里选择飞书\n打开飞书开放平台创建机器人，拿到appid和app secret\n\nhttps://platform.minimaxi.com/user-center/payment/coding-plan\nhttps://open.feishu.cn/app/cli_a9142b002bf9dbc9/auth\nhttps://docs.openclaw.ai/zh-CN/channels/feishu\n以上，参考minimax和openclaw + 飞书官方文档操作即可\n```bash\n# Install OpenClaw\nnpm i -g openclaw\n\n# Meet your lobster\nopenclaw onboard\n```\nminima的apikey\n```json\n{\n  \"version\": 1,\n  \"profiles\": {\n    \"minimax-portal:default\": {\n      \"type\": \"oauth\",\n      \"provider\": \"minimax-portal\",\n      \"access\": \"你的minimax api key\",\n      \"refresh\": \"cSFtuGlOYEeyFnjtLSmp2k5yhhsTFTYJbglw7gEfPGU=\",\n      \"expires\": 1803523264210\n    }\n  },\n  \"lastGood\": {\n    \"minimax-portal\": \"minimax-portal:default\"\n  },\n  \"usageStats\": {\n    \"minimax-portal:default\": {\n      \"lastUsed\": 1772591858658,\n      \"errorCount\": 0\n    }\n  }\n}\n```\n按照向导安装，中间除了选择模型和消息渠道飞书意外其他都可以skip now跳过\n最后让选择以什么方式链接gateway\nopenclaw默认提供了两种ui方式，tui，和webui\ntui是在终端。webui则是浏览器打开的web界面。选择一种即可\n\n可能会遇到一个错误提示\n```bash\nrun error: HTTP 401 authentication_error: invalid api key (request_id: 05f72007a60043c3627694d9807482ca)\n```\n这个是因为配置minimax的时候不是选择的oauth。如下图，当时我选择的是第二项。应该先选择第一项会跳转到minimax的网站做登录验证。具体可以参考minimax文档\nhttps://platform.minimaxi.com/docs/guides/text-ai-coding-tools#%E5%AE%89%E8%A3%85-openclaw\n\n```bash\nopenclaw configure\n```\n重新配置模型，选在MiniMax OAuth配置，网页先登录MiniMax\n安装成功，快捷键Ctrl+C退出安装向导，回到命令行\n```bash\n# 重启网关\nopenclaw gateway restart\n# 查询一下gateway运行状态\nopenclaw gateway status\n# 输出如下部分信息\nService: LaunchAgent (loaded)\nFile logs: /tmp/openclaw/openclaw-2026-03-04.log\nCommand: /usr/local/bin/node /usr/local/lib/node_modules/openclaw/dist/index.js gateway --port 18789\nService file: ~/Library/LaunchAgents/ai.openclaw.gateway.plist\nService env: OPENCLAW_GATEWAY_PORT=18789\n\nConfig (cli): ~/.openclaw/openclaw.json\nConfig (service): ~/.openclaw/openclaw.json\n\nGateway: bind=loopback (127.0.0.1), port=18789 (service args)\nProbe target: ws://127.0.0.1:18789\nDashboard: http://127.0.0.1:18789/\nProbe note: Loopback-only gateway; only local clients can connect.\n\nRuntime: running (pid 28880)\nRPC probe: ok\n```\n直接通过web ui链接http://127.0.0.1:18789访问可能会提示缺少token\n\n按照网页上的提示\n```bash\nopenclaw dashboard --no-open\nopenclaw doctor --generate-gateway-token\n```\n使用带token的网页访问即可\n\n调试飞书渠道\n打开飞书找到我们创建的机器人发送任意信息\n飞书会返回提示\n```bash\nOpenClaw: access not configured.\nYour Feishu user id: ou_aa47cba14653da59df6b06dca5303eaa\nPairing code: 8B9RFJ69\nAsk the bot owner to approve with:\nopenclaw pairing approve feishu 8B9RFJ69\n```\n提示需要配对，复制最后一段在网关终端运行即可\n## skills安装工具clawhub\nhttps://clawhub.ai/\nclawhub官方的skills市场及安装工具，使用npm全局安装，方便安装特定的skills\n你也可以跟openclaw对话让他安装。这里我通过手动安装，是想明确管理技能列表，避免openclaw乱安装skills造成混乱\n```bash\nnpm install -g clawhub\n```\n## 参考学习\nhttps://chatglm.cn/studyBuddy/detail/68f0b8c110eea3e78b0e0e5e?id=69a7ef380a9726018b429fe9&lang=zh\n",
+      "order": 2,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "在一台全新的mac电脑上安装openclaw包括配套的开发环境    nodejs 官方建议安装方式之一是nodejs安装    bash   Install OpenClaw npm i -g op...",
+      "readTime": "2 min",
+      "status": "publish"
+    },
+    {
+      "id": "5",
+      "title": "openclaw推荐装的10个skills",
+      "filename": "04-openclaw推荐装的10个skills.md",
+      "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n安装方式，通过跟openclaw对话安装，另外一种方式直接到官方的clawhub网站下载，然后放到你的workspace/skills/文件夹下即可，然后通过对话让openclaw帮你加载时上\n因为直接安装有可能会报错，调用clawhub api下载的人太多，被限制了让你过一段时间再试\n已经安装列表\nnotion安装需要通过mcp的方式，需要提供token详细见\nopenclaw集成notion \ntavily-search需要key\n\n\n",
+      "order": 4,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "安装方式，通过跟openclaw对话安装，另外一种方式直接到官方的clawhub网站下载，然后放到你的workspace/skills/文件夹下即可，然后",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "6",
+      "title": "openclaw配置user等核心文件",
+      "filename": "05-openclaw配置user等核心文件.md",
+      "content": "## 配置USER.MD等文件\n理解 AI 助手「灵魂」的三件套：\n- SOUL.md - 定义Agent的\"灵魂\"和人格特征\n- USER.md - 用户配置文件\n- AGENTS.md - 定义Agent的工作手册\n这些文件位于 ~/.openclaw/agents/ 目录下。\n\n",
+      "order": 5,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "配置USER.MD等文件 理解 AI 助手「灵魂」的三件套： - SOUL.md - 定义Agent的\"灵魂\"和人格特征 - USER.md - 用户配置文件 - AGENTS.md - 定义A",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "7",
+      "title": "openclaw集成notion",
+      "filename": "05-openclaw集成notion.md",
+      "content": "## 集成notion\nopenclaw默认已经集成notion相关的skills。需要到notin开放平台申请api key\nhttps://www.notion.so/profile/integrations/public\n1，登录开放平台创建“内部集成”：\n进入noton开发者平台→内部集成→创建集成→配置内容访问权限→配置完成\n2，当前时间生成的apikey是ntn开头的（openclaw过程中一直提示我应该是secret_开头的，实际是notion已经修改了，最新的是用ntn开头）\n3，之后就跟openclaw对话让他帮我尝试连接notion。\n4，对话过程大概是\n```plain text\n你有notion操作的skills\n答：已经集成了\n帮我在notion创建一篇文章，标题是这是openclaw创建的，内容是创建成功\n答：需要提供key\n这里不管安装问题，直接提供上面的key\n答：提供的key有问题，401错误API调不通，请确认key是否正确，你提供的是ntn_开头的key，\n实际的key应该是secret_开头\n这个地方反复查各种资料搞了很久，notion上有两种集成，一种是集成，一种是内部集成。实际上notion\n新的版本做来变更，集成（外部）使用secret_开头的key，内部集成使用ntn_开头，来区分。但是问题依旧\n查资料提示使用mcp。安装openclaw内置的mcpoter工具，让openclaw自己安装，安装好之后对话让\nopenclaw帮我安装notion的mcp服务（虽然他说自己已经集成了）。提示安装成功\n问：你现在可以连接notion了吗\n答：我有notion的mcp服务且能做10几项操作功能，但是api还是无法连接，需要key\n问：还是直接把key贴进去（这里openclaw有提示，建议不要直接把key方进入配置文件，可以放在环境\n变量里面，这里是测试就直接放了）\n答：问题还是提供的key有问题，401错误API调不通，请确认key是否正确，你提供的是ntn_开头的key，\n实际的key应该是secret_开头\n这里来来回回折腾了很久，最后\n问：最新的notion就是以ntn开头的，最新版本已经去掉了secret_不要再纠结这个问题，如果还是不通\n分析一下其他原因\n然后就是一顿操作之后提示\n\nNotion MCP 信息汇总：\n安装方式：npm install -g notion-mcp-server\n配置文件：~/.mcporter/mcporter.json\nAPI Token：ntn_ 开头的 OAuth Token\n\n打开配置文件\n{\n  \"mcpServers\": {\n    \"notion\": {\n      \"command\": \"notion-mcp-server\",\n      \"env\": {\n        \"NOTION_TOKEN\": \"你自己的token\"\n      }\n    }\n  },\n  \"imports\": []\n}\n测试：帮我在notion创建一篇文章，标题是这是openclaw创建的，内容是创建成功\n确实创建成功了。\n```\n5，经过上面各种折腾最后成功了\n6，通过飞书测试也成功\n疑问：\n最开始用openclaw自带的mcpoter skills去安装notion，配置文件是在~/.openclaw/workspace/config/mcpprter.json中看路径知道这是opencalw工作空间中安装和生效\n但是最后openclaw实用的npm install去装，而且是-g的全局安装，所有配置文件在~/.mcporter/mcporter.json。\n这样就成功了，所以很有可能是之前的方式工作区域设置有问题。\n第二个，看过配置文件，之前的配置有问题\n新的ntn的配置方式是\nNOTION_TOKEN\n之前是\nNOTION_API_KEY\n所以还有一种可能是notion的接口方式改了，但是openclaw对接的模型并没有找最新的配置方式。或者原来mcpoter命令去安装的notion-mcp对应的skills就是老的配置，没有更新。npm -g的安装是从官方发布的最近包获取，通常比mcppoter这些维护要及时。\n",
+      "order": 5,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "集成notion openclaw默认已经集成notion相关的skills。需要到notin开放平台申请api key https://www.notion.so/profile/integr",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "8",
+      "title": "openclaw安装tavily search网页搜索",
+      "filename": "06-openclaw安装tavily-search网页搜索.md",
+      "content": "1，通过官方的clawhub安装，通过跟openclaw对话即可\n当前大概率失败，返回错误是调用api频次太多，原因是当前大量用户访问，官方限流了，等一段时间再试也可以\n2，上官方clawhub.ai网站去找，手动下载，解压后拷贝的你的workspace，默认是(mac)~/.openclaw/workspace/skills/下。然后跟openclaw对话告诉他你已经自己下载了这个skills并且拷贝到了对应的文件夹下，请帮忙安装\n3，安装成功，自动重启，提示你需要key\n这个时候去tavily官方网站去申请\nhttps://www.tavily.com/\n不像自己配就把key扔给openclaw。可以让他用环境变量的方式配置，放置key暴露在openclaw里边。不了解的就不用关心了\n",
+      "order": 6,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "1，通过官方的clawhub安装，通过跟openclaw对话即可 当前大概率失败，返回错误是调用api频次太多，原因是当前大量用户访问，官方限流了，等一段时间再试也可以 2，上官方clawhub.ai...",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "9",
+      "title": "openclaw多agents实战",
+      "filename": "07-openclaw多agents实战.md",
+      "content": "技术实现\n几个关键点：\n1. 每个Agent一个独立workspace\nOpenClaw支持多Agent架构。每个Agent有自己的SOUL.md（人格）、AGENTS.md（工作手册）、MEMORY.md（记忆）。墨知只知道知乎的事，墨推只管Twitter的活，互不干扰。\n2. Agent之间通过sessions_send通信\n墨知需要墨笔写稿时，直接调用sessions_send发任务过去。墨笔写完，结果自动返回。跨Agent通信是OpenClaw的核心能力之一。\n3. 定时任务通过cron系统调度\n27个cron任务，分布在早、中、晚三个时段。OpenClaw的cron支持独立会话执行，结果自动推送到Telegram。\n4. VNC远程浏览器操作平台\n这是最硬核的部分。很多自媒体平台没有开放API，只能用浏览器操作。我在服务器上跑了VNC远程桌面，Agent通过CDP（Chrome DevTools Protocol）直接操作Chrome——登录、发文、采数据，全部是真实浏览器行为。\n不是API模拟，是真的在点按钮、填表单、截页面。\n\n",
+      "order": 7,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "技术实现 几个关键点： 1. 每个Agent一个独立workspace OpenClaw支持多Agent架构。每个Agent有自己的SOUL.md（人格）、AGENTS.md（工作手册）、MEMORY...",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "10",
+      "title": "openclaw集成notion",
+      "filename": "07-openclaw集成notion.md",
+      "content": "## 集成notion\nopenclaw默认已经集成notion相关的skills。需要到notin开放平台申请api key\nNotion—The AI workspace that works for you.\n### 操作步骤\n1，登录开放平台创建“内部集成”：\n- 进入noton开发者平台→内部集成→创建集成→配置内容访问权限→配置完成\n\n2，当前时间生成的apikey是ntn开头的（openclaw过程中一直提示我应该是secret_开头的，实际是notion已经修改了，最新的是用ntn开头）\n3，之后就跟openclaw对话让他帮我尝试连接notion。\n4，对话过程大概是\n```plain text\n你有notion操作的skills\n答：已经集成了\n帮我在notion创建一篇文章，标题是这是openclaw创建的，内容是创建成功\n答：需要提供key\n这里不管安装问题，直接提供上面的key\n答：提供的key有问题，401错误API调不通，请确认key是否正确，你提供的是ntn_开头的key，\n实际的key应该是secret_开头\n这个地方反复查各种资料搞了很久，notion上有两种集成，一种是集成，一种是内部集成。实际上notion\n新的版本做来变更，集成（外部）使用secret_开头的key，内部集成使用ntn_开头，来区分。但是问题依旧\n查资料提示使用mcp。安装openclaw内置的mcpoter工具，让openclaw自己安装，安装好之后对话让\nopenclaw帮我安装notion的mcp服务（虽然他说自己已经集成了）。提示安装成功\n问：你现在可以连接notion了吗\n答：我有notion的mcp服务且能做10几项操作功能，但是api还是无法连接，需要key\n问：还是直接把key贴进去（这里openclaw有提示，建议不要直接把key方进入配置文件，可以放在环境\n变量里面，这里是测试就直接放了）\n答：问题还是提供的key有问题，401错误API调不通，请确认key是否正确，你提供的是ntn_开头的key，\n实际的key应该是secret_开头\n这里来来回回折腾了很久，最后\n问：最新的notion就是以ntn开头的，最新版本已经去掉了secret_不要再纠结这个问题，如果还是不通\n分析一下其他原因\n然后就是一顿操作之后提示\n\nNotion MCP 信息汇总：\n安装方式：npm install -g notion-mcp-server\n配置文件：~/.mcporter/mcporter.json\nAPI Token：ntn_ 开头的 OAuth Token\n\n打开配置文件\n{\n  \"mcpServers\": {\n    \"notion\": {\n      \"command\": \"notion-mcp-server\",\n      \"env\": {\n        \"NOTION_TOKEN\": \"你自己的token\"\n      }\n    }\n  },\n  \"imports\": []\n}\n测试：帮我在notion创建一篇文章，标题是这是openclaw创建的，内容是创建成功\n确实创建成功了。\n```\n5，经过上面各种折腾最后成功了\n6，通过飞书测试也成功\n### 疑问\n最开始用openclaw自带的mcpoter skills去安装notion，配置文件是在~/.openclaw/workspace/config/mcpprter.json中看路径知道这是opencalw工作空间中安装和生效\n但是最后openclaw实用的npm install去装，而且是-g的全局安装，所有配置文件在~/.mcporter/mcporter.json。\n这样就成功了，所以很有可能是之前的方式工作区域设置有问题。\n第二个，看过配置文件，之前的配置有问题\n新的ntn的配置方式是\nNOTION_TOKEN\n之前是\nNOTION_API_KEY\n所以还有一种可能是notion的接口方式改了，但是openclaw对接的模型并没有找最新的配置方式。或者原来mcpoter命令去安装的notion-mcp对应的skills就是老的配置，没有更新。npm -g的安装是从官方发布的最近包获取，通常比mcppoter这些维护要及时。\n",
+      "order": 7,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "集成notion openclaw默认已经集成notion相关的skills。需要到notin开放平台申请api key Notion—The AI workspace that works f",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "11",
+      "title": "openclaw之安装git",
+      "filename": "08-openclaw之安装git.md",
+      "content": "## 安装git（可跳过）\n安装git并不是必须得，可以先安装openclaw。建议先安装git。因为很多skills都发布在gihub上，可能会需要从git上下东西，此处对于研发来说，其他普通用户可以跳过\nhttps://git-scm.com/\n官方推荐使用brew，brew是macos的一个包管理器，nodejs安装中有提到过\n```bash\nHomebrew\nInstall homebrew if you don't already have it, then:\n$ brew install git\n# 查询版本，能够正确返回版本信息则安装成功\n$ git version\ngit version 2.53.0\n# 配置全局用户名和邮箱\n$ \n```\ngit常用命令\nhttps://coding.net/help/docs/host/git/git%20commands.html\n```bash\n# 创建版本库\n$ git clone <url>                  #克隆远程版本库\n$ git init                         #初始化本地版本库\n# 修改和提交\n$ git status                       #查看状态\n$ git diff                         #查看变更内容\n$ git add .                        #跟踪所有改动过的文件\n$ git add <file>                   #跟踪指定的文件\n$ git mv <old><new>                #文件改名\n$ git rm<file>                     #删除文件\n$ git rm --cached<file>            #停止跟踪文件但不删除\n$ git commit -m \"commit messages\"  #提交所有更新过的文件\n$ git commit --amend               #修改最后一次改动\n# 查看提交历史\n$ git log                    #查看提交历史\n$ git log -p <file>          #查看指定文件的提交历史\n$ git blame <file>           #以列表方式查看指定文件的提交历史\n# 撤销\n$ git reset --hard HEAD      #撤销工作目录中所有未提交文件的修改内容\n$ git checkout HEAD <file>   #撤销指定的未提交文件的修改内容\n$ git revert <commit>        #撤销指定的提交\n$ git log --before=\"1 days\"  #退回到之前1天的版本\n# 分支与标签\n$ git branch                   #显示所有本地分支\n$ git checkout <branch/tag>    #切换到指定分支和标签\n$ git branch <new-branch>      #创建新分支\n$ git branch -d <branch>       #删除本地分支\n$ git tag                      #列出所有本地标签\n$ git tag <tagname>            #基于最新提交创建标签\n$ git tag -d <tagname>         #删除标签\n# 合并与衍合\n$ git merge <branch>        #合并指定分支到当前分支\n$ git rebase <branch>       #衍合指定分支到当前分支\n# 远程操作\n$ git remote -v                   #查看远程版本库信息\n$ git remote show <remote>        #查看指定远程版本库信息\n$ git remote add <remote> <url>   #添加远程版本库\n$ git fetch <remote>              #从远程库获取代码\n$ git pull <remote> <branch>      #下载代码及快速合并\n$ git push <remote> <branch>      #上传代码及快速合并\n$ git push <remote\\> :<branch/tag-name\\>  #删除远程分支或标签\n$ git push --tags                       #上传所有标签\n\n```\n工具推荐：github desktop\nhttps://desktop.github.com/download/\nGitHub Desktop 是免费的开放源代码应用程序，可帮助处理托管在 GitHub 或其他 Git 托管服务上的代码。 使用 GitHub Desktop，可以在图形用户界面中执行提交和推送更改等 Git 命令，而不是使用命令行\n",
+      "order": 8,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "安装git（可跳过） 安装git并不是必须得，可以先安装openclaw。建议先安装git。因为很多skills都发布在gihub上，可能会需要从git上下东西，此处对于研发来说，其他普通用户可",
+      "readTime": "2 min",
+      "status": "publish"
+    },
+    {
+      "id": "12",
+      "title": "openclaw实用问题集",
+      "filename": "09-openclaw实用问题集.md",
+      "content": "## 使用tui问答，答案不返回tui界面，只在web ui对话中显示\n先new session一下，重新启动一个会话\n因为是测试，所以就不管之前的会话了，用到这里有个疑问，session是有长度的，怎么能一直记录，各种消息看到好像是有一个memory类似的skills，要不然new session一下之前的对话就没了，很多不好处理。先不管\n但是new了之后问题依旧。这里没有做任何多于的配置，就是默认，甚至链USER。md这些都没改\n\n## 问题一\n终端配置好了，网关也启动了，tui以及web都可以访问，安装了openclaw的client端，mac电脑。配置之后提示无法连接上网关。\n问题原因是新的客户端请求网关，需要在终端允许配对\n```shell\n查询有哪些设备配对了网关\n\nopenclaw devices list\n\n找到需要配对的，pending分类，使用如下命令配对\n\nopenclaw devices approve cb54c7f6-0e67-4482-ad24-f0b99f5723a7\n\n返回如下，则配对成功\n\nApproved 2ef52109a69fa5d1272d35e57df8a0ddc6df929a38485a0ae0f6e662493a79d5 (cb54c7f6-0e67-4482-ad24-f0b99f5723a7)\n```\n如图所示\n\n",
+      "order": 9,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "使用tui问答，答案不返回tui界面，只在web ui对话中显示 先new session一下，重新启动一个会话 因为是测试，所以就不管之前的会话了，用到这里有个疑问，session是有长度的，",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "13",
+      "title": "openclaw集成企微渠道",
+      "filename": "10-openclaw集成企微渠道.md",
+      "content": "https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&invite_source=19&invite_channel=6&invite_olduser=1&inviter_identity=2&version=5.0.6.91166&platform=mac\n直接在企微工作台找到机器人创建即可，需要升级到最新版本，否则看不到长连接方式\n以API方式创建机器人，链接方式：长连接\nbot ID：你的飞书bot ID\nsecret：你的飞书bot ID\n\nbotId是你的飞书bot ID\nsecret是你的飞书app secret\n当前openclaw暂时没有默认集成企微的消息渠道配置，需要本地安装插件\n```bash\nopenclaw plugins install @wecom/wecom-openclaw-plugin\n```\n第一次安装失败\n```bash\nDownloading @wecom/wecom-openclaw-plugin…\nExtracting /var/folders/kc/xrk0fybn4xj38hqg7xzymdqw0000gn/T/openclaw-npm-pack-TDMwX8/wecom-wecom-openclaw-plugin-1.0.5.tgz…\nInstalling to /Users/shuningwu/.openclaw/extensions/wecom-openclaw-plugin…\nInstalling plugin dependencies…\nnpm install failed:\n```\n原因可能是我有一个编辑器打开了openclaw的配置文件，关闭后重新运行命令，安装成功\n```bash\nopenclaw channels add\n```\n按照命令添加，安装向导并没有像企微手册那样提示输入botid和key。只是提示下载成功。按照提示下载又提示\n```bash\nPlugin install failed: plugin already exists: /Users/shuningwu/.openclaw/extensions/wecom-openclaw-plugin (delete it first)\n```\n测试发现我之前配置的其他渠道也没有了，问一下openclaw什么原因，提示我因为对应的插件缺少依赖。可能是应为我在添加企微渠道之前先做了openclaw update更新操作\n让openclaw帮我修复这个问题，然后让他帮我安装企微插件和渠道配置\n把botid和secret都给他然后提示成功\nopenclaw status查看一下显示渠道添加成功\n到机器人\n",
+      "order": 10,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&invite_source=19&invite_channel=6&invite_o...",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "14",
+      "title": "openclaw实用问题集",
+      "filename": "11-openclaw实用问题集.md",
+      "content": "## 使用tui问答，答案不返回tui界面，只在web ui对话中显示\n先new session一下，重新启动一个会话\n因为是测试，所以就不管之前的会话了，用到这里有个疑问，session是有长度的，怎么能一直记录，各种消息看到好像是有一个memory类似的skills，要不然new session一下之前的对话就没了，很多不好处理。先不管\n但是new了之后问题依旧。这里没有做任何多于的配置，就是默认，甚至链USER。md这些都没改\n## 问题一\n终端配置好了，网关也启动了，tui以及web都可以访问，安装了openclaw的client端，mac电脑。配置之后提示无法连接上网关。\n问题原因是新的客户端请求网关，需要在终端允许配对\n```shell\n查询有哪些设备配对了网关\n\nopenclaw devices list\n\n找到需要配对的，pending分类，使用如下命令配对\n\nopenclaw devices approve cb54c7f6-0e67-4482-ad24-f0b99f5723a7\n\n返回如下，则配对成功\n\nApproved 2ef52109a69fa5d1272d35e57df8a0ddc6df929a38485a0ae0f6e662493a79d5 (cb54c7f6-0e67-4482-ad24-f0b99f5723a7)\n```\n如图所示\n\n",
+      "order": 11,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "使用tui问答，答案不返回tui界面，只在web ui对话中显示 先new session一下，重新启动一个会话 因为是测试，所以就不管之前的会话了，用到这里有个疑问，session是有长度的，",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "15",
+      "title": "openclaw集成企微渠道",
+      "filename": "12-openclaw集成企微渠道.md",
+      "content": "https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&invite_source=19&invite_channel=6&invite_olduser=1&inviter_identity=2&version=5.0.6.91166&platform=mac\n直接在企微工作台找到机器人创建即可，需要升级到最新版本，否则看不到长连接方式\n以API方式创建机器人，链接方式：长连接\nbot ID：你的机器人 id\nsecret：你的机器人密钥 secret\n当前openclaw暂时没有默认集成企微的消息渠道配置，需要本地安装插件\n```bash\nopenclaw plugins install @wecom/wecom-openclaw-plugin\n```\n第一次安装失败\n```bash\nDownloading @wecom/wecom-openclaw-plugin…\nExtracting /var/folders/kc/xrk0fybn4xj38hqg7xzymdqw0000gn/T/openclaw-npm-pack-TDMwX8/wecom-wecom-openclaw-plugin-1.0.5.tgz…\nInstalling to /Users/shuningwu/.openclaw/extensions/wecom-openclaw-plugin…\nInstalling plugin dependencies…\nnpm install failed:\n```\n原因可能是我有一个编辑器打开了openclaw的配置文件，关闭后重新运行命令，安装成功\n```bash\nopenclaw channels add\n```\n按照命令添加，安装向导并没有像企微手册那样提示输入botid和key。只是提示下载成功。按照提示下载又提示\n```bash\nPlugin install failed: plugin already exists: /Users/shuningwu/.openclaw/extensions/wecom-openclaw-plugin (delete it first)\n```\n测试发现我之前配置的其他渠道也没有了，问一下openclaw什么原因，提示我因为对应的插件缺少依赖。可能是应为我在添加企微渠道之前先做了openclaw update更新操作\n让openclaw帮我修复这个问题，然后让他帮我安装企微插件和渠道配置\n把botid和secret都给他然后提示成功\nopenclaw status查看一下显示渠道添加成功\n",
+      "order": 12,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&invite_source=19&invite_channel=6&invite_o...",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "16",
+      "title": "ai成功案例",
+      "filename": "13-ai成功案例.md",
+      "content": "https://www.isales-ai.com/\n\n",
+      "order": 13,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "https://www.isales-ai.com/",
+      "readTime": "1 min",
+      "status": "publish"
+    },
+    {
+      "id": "17",
+      "title": "傅盛openclaw",
+      "filename": "14-傅盛openclaw.md",
+      "content": "https://cmcm.bot/\nhttps://sanwan.ai/\nhttps://www.easyclaw.work/\n\n",
+      "order": 14,
+      "category": "OpenClaw",
+      "date": "2026-03-16",
+      "excerpt": "https://cmcm.bot/ https://sanwan.ai/ https://www.easyclaw.work/",
+      "readTime": "1 min",
+      "status": "publish"
+    }
+  ],
+  "categories": [
+    {
+      "id": "overseas-vps",
+      "name": "海外VPS",
+      "icon": "🌍",
+      "order": 13
+    },
+    {
+      "id": "llm-apps",
+      "name": "大模型应用",
+      "icon": "🤖",
+      "order": 6
+    },
+    {
+      "id": "openclaw",
+      "name": "OpenClaw",
+      "icon": "🦞",
+      "order": 8
+    },
+    {
+      "id": "platforms",
+      "name": "平台",
+      "icon": "☁️",
+      "order": 9
+    },
+    {
+      "id": "api-gateway",
+      "name": "大模型接口网关",
+      "icon": "🔌",
+      "order": 10
+    },
+    {
+      "id": "design",
+      "name": "原型设计",
+      "icon": "🎨",
+      "order": 4
+    },
+    {
+      "id": "agent-mcp",
+      "name": "AI & Agent & MCP",
+      "icon": "🔗",
+      "order": 1
+    },
+    {
+      "id": "solutions",
+      "name": "应用解决方案",
+      "icon": "💼",
+      "order": 2
+    },
+    {
+      "id": "development",
+      "name": "研发",
+      "icon": "💻",
+      "order": 3
+    },
+    {
+      "id": "paas-workflow",
+      "name": "PaaS平台 & 工作流",
+      "icon": "⚙️",
+      "order": 5
+    },
+    {
+      "id": "community",
+      "name": "社区",
+      "icon": "🌐",
+      "order": 11
+    },
+    {
+      "id": "browser",
+      "name": "浏览器",
+      "icon": "🌐",
+      "order": 7
+    },
+    {
+      "id": "meeting",
+      "name": "会议",
+      "icon": "📹",
+      "order": 12
+    },
+    {
+      "id": "virtual-desktop",
+      "name": "虚拟桌面",
+      "icon": "🖥️",
+      "order": 14
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "图谱",
+      "icon": "🗺️",
+      "order": 15
+    },
+    {
+      "id": "blog",
+      "name": "博客",
+      "icon": "📝",
+      "order": 16
+    }
+  ],
+  "links": [
+    {
+      "id": "1",
+      "categoryId": "overseas-vps",
+      "name": "DigitalOcean",
+      "url": "https://cloud.digitalocean.com/",
+      "desc": "开发者云服务，支持google账号登录",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "categoryId": "overseas-vps",
+      "name": "Hetzner",
+      "url": "https://www.hetzner.com/",
+      "desc": "德国服务器提供商",
+      "order": 2
+    },
+    {
+      "id": "3",
+      "categoryId": "llm-apps",
+      "name": "AnyGen",
+      "url": "https://www.anygen.io/home?invitation_code=4QMBAUQNUJXCXLZ",
+      "desc": "AI工作平台",
+      "order": 1
+    },
+    {
+      "id": "4",
+      "categoryId": "llm-apps",
+      "name": "即梦AI",
+      "url": "https://jimeng.jianying.com/ai-tool/home?type=video",
+      "desc": "字节剪映AI工具",
+      "order": 2
+    },
+    {
+      "id": "5",
+      "categoryId": "llm-apps",
+      "name": "讯飞绘文",
+      "url": "https://turbodesk.xfyun.cn/",
+      "desc": "科大讯飞AI写作平台",
+      "order": 3
+    },
+    {
+      "id": "6",
+      "categoryId": "llm-apps",
+      "name": "Readdy",
+      "url": "https://readdy.ai/zh",
+      "desc": "AI网站生成器",
+      "order": 4
+    },
+    {
+      "id": "7",
+      "categoryId": "openclaw",
+      "name": "awesome-openclaw-skills",
+      "url": "https://github.com/VoltAgent/awesome-openclaw-skills/tree/main",
+      "desc": "OpenClaw Skills集合",
+      "order": 1
+    },
+    {
+      "id": "8",
+      "categoryId": "openclaw",
+      "name": "OpenClaw 101",
+      "url": "https://openclaw101.dev/",
+      "desc": "7天掌握OpenClaw教程",
+      "order": 2
+    },
+    {
+      "id": "9",
+      "categoryId": "platforms",
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/",
+      "desc": "Claude官方网站",
+      "order": 1
+    },
+    {
+      "id": "10",
+      "categoryId": "platforms",
+      "name": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "desc": "谷歌Gemini AI助手",
+      "order": 2
+    },
+    {
+      "id": "11",
+      "categoryId": "platforms",
+      "name": "NVIDIA NIM",
+      "url": "https://build.nvidia.com/",
+      "desc": "NVIDIA NIM APIs",
+      "order": 3
+    },
+    {
+      "id": "12",
+      "categoryId": "platforms",
+      "name": "Moonshot AI",
+      "url": "https://platform.moonshot.cn/",
+      "desc": "Kimi大模型开放平台",
+      "order": 4
+    },
+    {
+      "id": "13",
+      "categoryId": "platforms",
+      "name": "智谱AI",
+      "url": "https://bigmodel.cn/",
+      "desc": "智谱GLM大模型",
+      "order": 5
+    },
+    {
+      "id": "14",
+      "categoryId": "api-gateway",
+      "name": "YutoAPI",
+      "url": "https://gptapi.asia/",
+      "desc": "API网关服务",
+      "order": 1
+    },
+    {
+      "id": "15",
+      "categoryId": "design",
+      "name": "墨刀",
+      "url": "https://modao.cc/workspace/team/splpmqzz20pqoxoi",
+      "desc": "在线产品设计协作平台",
+      "order": 1
+    },
+    {
+      "id": "16",
+      "categoryId": "design",
+      "name": "Figma",
+      "url": "https://www.figma.com/",
+      "desc": "协作界面设计工具",
+      "order": 2
+    },
+    {
+      "id": "17",
+      "categoryId": "design",
+      "name": "星流",
+      "url": "https://www.xingliu.art/",
+      "desc": "新一代设计Agent",
+      "order": 3
+    },
+    {
+      "id": "18",
+      "categoryId": "design",
+      "name": "Pixso",
+      "url": "https://pixso.cn/",
+      "desc": "AI原生UI设计工具",
+      "order": 4
+    },
+    {
+      "id": "19",
+      "categoryId": "design",
+      "name": "Mixboard",
+      "url": "https://mixboard.google.com/projects",
+      "desc": "Google AI设计工具",
+      "order": 5
+    },
+    {
+      "id": "20",
+      "categoryId": "design",
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "desc": "手绘风格协作白板",
+      "order": 6
+    },
+    {
+      "id": "21",
+      "categoryId": "design",
+      "name": "UI UX Pro Max",
+      "url": "https://ui-ux-pro-max-skill.nextlevelbuilder.io/",
+      "desc": "Claude Code设计技能",
+      "order": 7
+    },
+    {
+      "id": "22",
+      "categoryId": "design",
+      "name": "Pencil",
+      "url": "https://www.pencil.dev/",
+      "desc": "设计到代码的工具",
+      "order": 8
+    },
+    {
+      "id": "23",
+      "categoryId": "design",
+      "name": "Paper Website",
+      "url": "https://paperwebsite.com/",
+      "desc": "从日志创建小型博客",
+      "order": 9
+    },
+    {
+      "id": "24",
+      "categoryId": "agent-mcp",
+      "name": "Agent Skills Directory",
+      "url": "https://skills.sh/",
+      "desc": "Agent技能目录",
+      "order": 1
+    },
+    {
+      "id": "25",
+      "categoryId": "agent-mcp",
+      "name": "Agent Skills Overview",
+      "url": "https://agentskills.io/home",
+      "desc": "Agent技能概览",
+      "order": 2
+    },
+    {
+      "id": "26",
+      "categoryId": "agent-mcp",
+      "name": "FastMCP",
+      "url": "https://gofastmcp.com/getting-started/welcome",
+      "desc": "FastMCP 2.0文档",
+      "order": 3
+    },
+    {
+      "id": "27",
+      "categoryId": "agent-mcp",
+      "name": "MCP Market",
+      "url": "https://mcpmarket.cn/",
+      "desc": "MCP服务器商店",
+      "order": 4
+    },
+    {
+      "id": "28",
+      "categoryId": "agent-mcp",
+      "name": "AiPPT",
+      "url": "https://www.aippt.cn/",
+      "desc": "全智能AI一键生成PPT",
+      "order": 5
+    },
+    {
+      "id": "29",
+      "categoryId": "agent-mcp",
+      "name": "Futurepedia",
+      "url": "https://www.futurepedia.io/",
+      "desc": "AI工具和软件最佳选择",
+      "order": 6
+    },
+    {
+      "id": "30",
+      "categoryId": "agent-mcp",
+      "name": "PulseMCP",
+      "url": "https://www.pulsemcp.com/servers",
+      "desc": "MCP服务器目录",
+      "order": 7
+    },
+    {
+      "id": "31",
+      "categoryId": "agent-mcp",
+      "name": "Skillhub",
+      "url": "https://skillhub.ai/",
+      "desc": "AI技能中心",
+      "order": 8
+    },
+    {
+      "id": "32",
+      "categoryId": "solutions",
+      "name": "Qoder",
+      "url": "https://qoder.com/",
+      "desc": "Agentic编程平台",
+      "order": 1
+    },
+    {
+      "id": "33",
+      "categoryId": "solutions",
+      "name": "Claude",
+      "url": "https://claude.ai/",
+      "desc": "Claude AI助手",
+      "order": 2
+    },
+    {
+      "id": "34",
+      "categoryId": "solutions",
+      "name": "MD2Card",
+      "url": "https://md2card.com/zh",
+      "desc": "Markdown转知识卡片",
+      "order": 3
+    },
+    {
+      "id": "35",
+      "categoryId": "solutions",
+      "name": "Clawdbot",
+      "url": "https://clawd.bot/",
+      "desc": "个人AI助手",
+      "order": 4
+    },
+    {
+      "id": "36",
+      "categoryId": "solutions",
+      "name": "Moltbot",
+      "url": "https://molt.bot/",
+      "desc": "个人AI助手",
+      "order": 5
+    },
+    {
+      "id": "37",
+      "categoryId": "solutions",
+      "name": "OpenClaw",
+      "url": "https://openclaw.ai/",
+      "desc": "个人AI助手",
+      "order": 6
+    },
+    {
+      "id": "38",
+      "categoryId": "solutions",
+      "name": "Moltbook",
+      "url": "https://www.moltbook.com/",
+      "desc": "Agent互联网首页",
+      "order": 7
+    },
+    {
+      "id": "39",
+      "categoryId": "solutions",
+      "name": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "desc": "AI搜索，Wikipedia替代",
+      "order": 8
+    },
+    {
+      "id": "40",
+      "categoryId": "solutions",
+      "name": "Firecrawl",
+      "url": "https://www.firecrawl.dev/",
+      "desc": "AI网页数据API",
+      "order": 9
+    },
+    {
+      "id": "41",
+      "categoryId": "solutions",
+      "name": "墨问",
+      "url": "https://mowen.cn/",
+      "desc": "记录即创作",
+      "order": 10
+    },
+    {
+      "id": "42",
+      "categoryId": "solutions",
+      "name": "Bohrium",
+      "url": "https://www.bohrium.com/",
+      "desc": "数据科学平台",
+      "order": 11
+    },
+    {
+      "id": "43",
+      "categoryId": "solutions",
+      "name": "OpenCode",
+      "url": "https://opencode.ai/",
+      "desc": "开源AI编码助手",
+      "order": 12
+    },
+    {
+      "id": "44",
+      "categoryId": "solutions",
+      "name": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "desc": "Google AI开发工具",
+      "order": 13
+    },
+    {
+      "id": "45",
+      "categoryId": "solutions",
+      "name": "Readdy",
+      "url": "https://readdy.ai/zh",
+      "desc": "AI网站生成器",
+      "order": 14
+    },
+    {
+      "id": "46",
+      "categoryId": "development",
+      "name": "腾讯云微搭",
+      "url": "https://weda.cloud.tencent.com.cn/index",
+      "desc": "低代码平台",
+      "order": 1
+    },
+    {
+      "id": "47",
+      "categoryId": "development",
+      "name": "DCloud",
+      "url": "https://www.dcloud.io/",
+      "desc": "HBuilderX、uni-app",
+      "order": 2
+    },
+    {
+      "id": "48",
+      "categoryId": "development",
+      "name": "uni-app",
+      "url": "https://uniapp.dcloud.net.cn/",
+      "desc": "跨平台应用框架",
+      "order": 3
+    },
+    {
+      "id": "49",
+      "categoryId": "development",
+      "name": "Apifox",
+      "url": "https://apifox.com/",
+      "desc": "API文档调试Mock测试",
+      "order": 4
+    },
+    {
+      "id": "50",
+      "categoryId": "development",
+      "name": "Cursor",
+      "url": "https://cursor.com/cn",
+      "desc": "AI驱动的代码编辑器",
+      "order": 5
+    },
+    {
+      "id": "51",
+      "categoryId": "development",
+      "name": "Latent Box",
+      "url": "https://latentbox.com/zh",
+      "desc": "AI产品和项目集合",
+      "order": 6
+    },
+    {
+      "id": "52",
+      "categoryId": "development",
+      "name": "CrewAI",
+      "url": "https://crewai.org.cn/",
+      "desc": "多Agent协作框架",
+      "order": 7
+    },
+    {
+      "id": "53",
+      "categoryId": "development",
+      "name": "AutoGen",
+      "url": "https://microsoft.github.io/autogen/stable/",
+      "desc": "微软AutoGen框架",
+      "order": 8
+    },
+    {
+      "id": "54",
+      "categoryId": "development",
+      "name": "LangChain",
+      "url": "https://www.langchain.com/",
+      "desc": "LLM应用框架",
+      "order": 9
+    },
+    {
+      "id": "55",
+      "categoryId": "development",
+      "name": "Ollama",
+      "url": "https://ollama.com/",
+      "desc": "本地运行大模型",
+      "order": 10
+    },
+    {
+      "id": "56",
+      "categoryId": "paas-workflow",
+      "name": "火山引擎",
+      "url": "https://www.volcengine.com/",
+      "desc": "字节跳动AI云",
+      "order": 1
+    },
+    {
+      "id": "57",
+      "categoryId": "paas-workflow",
+      "name": "飞桨AI Studio",
+      "url": "https://aistudio.baidu.com/overview",
+      "desc": "百度AI学习社区",
+      "order": 2
+    },
+    {
+      "id": "58",
+      "categoryId": "paas-workflow",
+      "name": "秒哒",
+      "url": "https://www.miaoda.cn/",
+      "desc": "生成式应用开发平台",
+      "order": 3
+    },
+    {
+      "id": "59",
+      "categoryId": "paas-workflow",
+      "name": "扣子",
+      "url": "https://www.coze.cn/",
+      "desc": "AI智能体开发平台",
+      "order": 4
+    },
+    {
+      "id": "60",
+      "categoryId": "paas-workflow",
+      "name": "Dify",
+      "url": "https://dify.ai/zh",
+      "desc": "生产级Agentic工作流平台",
+      "order": 5
+    },
+    {
+      "id": "61",
+      "categoryId": "paas-workflow",
+      "name": "n8n",
+      "url": "https://n8n.io/",
+      "desc": "AI工作流自动化工具",
+      "order": 6
+    },
+    {
+      "id": "62",
+      "categoryId": "paas-workflow",
+      "name": "Streamlit",
+      "url": "https://streamlit.io/",
+      "desc": "快速构建数据应用",
+      "order": 7
+    },
+    {
+      "id": "63",
+      "categoryId": "community",
+      "name": "智源社区",
+      "url": "https://hub.baai.ac.cn/",
+      "desc": "人工智能实验室",
+      "order": 1
+    },
+    {
+      "id": "64",
+      "categoryId": "community",
+      "name": "Reddit",
+      "url": "https://www.reddit.com/",
+      "desc": "社交新闻聚合",
+      "order": 2
+    },
+    {
+      "id": "65",
+      "categoryId": "community",
+      "name": "TensorFlow",
+      "url": "https://www.tensorflow.org/?hl=zh-cn",
+      "desc": "机器学习框架",
+      "order": 3
+    },
+    {
+      "id": "66",
+      "categoryId": "community",
+      "name": "三个皮匠报告",
+      "url": "https://www.sgpjbg.com.cn/",
+      "desc": "行业研究报告分享",
+      "order": 4
+    },
+    {
+      "id": "67",
+      "categoryId": "community",
+      "name": "Instagram",
+      "url": "https://www.instagram.com/explore/",
+      "desc": "图片视频社交平台",
+      "order": 5
+    },
+    {
+      "id": "68",
+      "categoryId": "community",
+      "name": "Facebook",
+      "url": "https://www.facebook.com/",
+      "desc": "社交媒体平台",
+      "order": 6
+    },
+    {
+      "id": "69",
+      "categoryId": "community",
+      "name": "AI Weekly",
+      "url": "https://ai-weekly.ai/",
+      "desc": "每周AI新闻",
+      "order": 7
+    },
+    {
+      "id": "70",
+      "categoryId": "community",
+      "name": "Discord",
+      "url": "https://discord.com/",
+      "desc": "社区聊天平台",
+      "order": 8
+    },
+    {
+      "id": "71",
+      "categoryId": "browser",
+      "name": "夸克",
+      "url": "https://www.quark.cn/",
+      "desc": "AI搜索电脑版",
+      "order": 1
+    },
+    {
+      "id": "72",
+      "categoryId": "browser",
+      "name": "ima.copilot",
+      "url": "https://ima.qq.com/download/",
+      "desc": "腾讯AI工作台",
+      "order": 2
+    },
+    {
+      "id": "73",
+      "categoryId": "browser",
+      "name": "Browserbase",
+      "url": "https://www.browserbase.com/",
+      "desc": "AI代理浏览器",
+      "order": 3
+    },
+    {
+      "id": "74",
+      "categoryId": "browser",
+      "name": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/",
+      "desc": "AI学习和职业发展",
+      "order": 4
+    },
+    {
+      "id": "75",
+      "categoryId": "browser",
+      "name": "Bright Data",
+      "url": "https://brightdata.com/",
+      "desc": "代理和数据平台",
+      "order": 5
+    },
+    {
+      "id": "76",
+      "categoryId": "browser",
+      "name": "Atlas浏览器",
+      "url": "https://atlasbrowser.net/zh-CN",
+      "desc": "智能浏览",
+      "order": 6
+    },
+    {
+      "id": "77",
+      "categoryId": "meeting",
+      "name": "Granola",
+      "url": "https://www.granola.ai/",
+      "desc": "AI会议笔记工具",
+      "order": 1
+    },
+    {
+      "id": "78",
+      "categoryId": "virtual-desktop",
+      "name": "Apache Guacamole",
+      "url": "https://guacamole.apache.org/",
+      "desc": "H5远程桌面网关",
+      "order": 1
+    },
+    {
+      "id": "79",
+      "categoryId": "knowledge-graph",
+      "name": "炬图",
+      "url": "https://vip.joinmap.ai/index",
+      "desc": "图解价值",
+      "order": 1
+    },
+    {
+      "id": "80",
+      "categoryId": "blog",
+      "name": "Zara's AI learning",
+      "url": "https://zara.faces.site/ai",
+      "desc": "AI学习库",
+      "order": 1
+    },
+    {
+      "id": "81",
+      "categoryId": "blog",
+      "name": "Creator Economy",
+      "url": "https://creatoreconomy.so/",
+      "desc": "创作者经济",
+      "order": 2
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "name": "管理员",
+      "roleId": "1"
+    }
+  ],
+  "roles": [
+    {
+      "id": "1",
+      "name": "超级管理员",
+      "code": "admin",
+      "description": "拥有所有权限",
+      "menuKeys": [
+        "home",
+        "dashboard",
+        "articles",
+        "navigation",
+        "roles",
+        "users",
+        "packages",
+        "memberManage",
+        "features",
+        "menuManage",
+        "agents",
+        "subscriptions"
+      ],
+      "isSystem": true
+    },
+    {
+      "id": "2",
+      "name": "编辑",
+      "code": "editor",
+      "description": "只能管理文章",
+      "menuKeys": [
+        "home",
+        "articles"
+      ],
+      "isSystem": false
+    }
+  ],
+  "menus": [
+    {
+      "key": "home",
+      "title": "首页",
+      "path": "/admin/home",
+      "icon": "HomeFilled",
+      "sort": 1,
+      "id": "1916"
+    },
+    {
+      "key": "dashboard",
+      "title": "数据看板",
+      "path": "/admin/dashboard",
+      "icon": "DataAnalysis",
+      "sort": 2,
+      "id": "dash01"
+    },
+    {
+      "key": "articles",
+      "title": "文章管理",
+      "path": "/admin/articles",
+      "icon": "Document",
+      "id": "c74b",
+      "sort": 3
+    },
+    {
+      "key": "navigation",
+      "title": "导航管理",
+      "path": "/admin/navigation",
+      "icon": "Link",
+      "id": "e494",
+      "sort": 4
+    },
+    {
+      "key": "roles",
+      "title": "角色管理",
+      "path": "/admin/roles",
+      "icon": "UserFilled",
+      "id": "cb50",
+      "sort": 10
+    },
+    {
+      "key": "users",
+      "title": "用户管理",
+      "path": "/admin/users",
+      "icon": "User",
+      "id": "a1ad",
+      "sort": 12
+    },
+    {
+      "key": "packages",
+      "title": "套餐管理",
+      "path": "/admin/packages",
+      "icon": "Coin",
+      "id": "cc01",
+      "sort": 6
+    },
+    {
+      "key": "features",
+      "title": "功能管理",
+      "path": "/admin/features",
+      "icon": "SetUp",
+      "id": "fe01",
+      "sort": 7
+    },
+    {
+      "key": "memberManage",
+      "title": "会员管理",
+      "path": "/admin/members",
+      "icon": "UserFilled",
+      "id": "3111",
+      "sort": 8
+    },
+    {
+      "id": "025d",
+      "key": "menuManage",
+      "title": "菜单管理",
+      "path": "/admin/menus",
+      "icon": "Menu",
+      "sort": 11
+    },
+    {
+      "key": "agents",
+      "title": "EDA HUB",
+      "path": "/admin/agents",
+      "icon": "Robot",
+      "sort": 5,
+      "id": "3810"
+    },
+    {
+      "id": "3ca5",
+      "key": "subscriptions",
+      "title": "订阅管理",
+      "path": "/admin/subscriptions",
+      "icon": "CreditCard",
+      "sort": 9
+    }
+  ],
+  "packages": [
+    {
+      "id": "1",
+      "name": "免费版",
+      "code": "free",
+      "description": "免费基础套餐，适合入门体验",
+      "tokenLimit": 100000,
+      "agentIds": [
+        "23bc",
+        "ac8d",
+        "c354",
+        "ac20",
+        "398e",
+        "3811",
+        "cffd",
+        "4cc2",
+        "c269"
+      ],
+      "sort": 1,
+      "status": "active",
+      "prices": {
+        "monthly": 0,
+        "quarterly": 0,
+        "yearly": 0
+      }
+    },
+    {
+      "id": "2",
+      "name": "Plus版",
+      "code": "plus",
+      "tier": "monthly",
+      "description": "专业版套餐，适合个人开发者",
+      "prices": {
+        "monthly": 99,
+        "quarterly": 267,
+        "yearly": 948
+      },
+      "duration": 30,
+      "durationUnit": "day",
+      "tokenLimit": 1000000,
+      "agentIds": [
+        "23bc",
+        "ac8d",
+        "c354",
+        "cffd"
+      ],
+      "isDefault": false,
+      "sort": 2,
+      "status": "active"
+    },
+    {
+      "id": "3",
+      "name": "Max版",
+      "code": "max",
+      "tier": "monthly",
+      "description": "高级版套餐，适合团队使用",
+      "prices": {
+        "monthly": 199,
+        "quarterly": 537,
+        "yearly": 1908
+      },
+      "duration": 30,
+      "durationUnit": "day",
+      "tokenLimit": 3000000,
+      "agentIds": [
+        "23bc",
+        "ac8d",
+        "c354",
+        "cffd",
+        "1c28",
+        "3811",
+        "c269"
+      ],
+      "isDefault": false,
+      "sort": 3,
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "name": "Ultra版",
+      "code": "ultra",
+      "tier": "monthly",
+      "description": "旗舰版套餐，适合企业用户",
+      "prices": {
+        "monthly": 399,
+        "quarterly": 1077,
+        "yearly": 3830
+      },
+      "duration": 30,
+      "durationUnit": "day",
+      "tokenLimit": -1,
+      "agentIds": [
+        "23bc",
+        "ac8d",
+        "c354",
+        "cffd",
+        "1c28",
+        "3811",
+        "c269",
+        "4cc2",
+        "398e",
+        "ac20",
+        "0b27"
+      ],
+      "isDefault": false,
+      "sort": 4,
+      "status": "active"
+    }
+  ],
+  "features": [
+    {
+      "id": "1",
+      "name": "YilinG Agent",
+      "code": "yilingAgent",
+      "sort": 1,
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "code": "schemeAgent",
+      "name": "方案设计 Agent",
+      "description": "方案设计智能体",
+      "status": "active",
+      "sort": 2
+    },
+    {
+      "id": "3",
+      "code": "deviceLibAgent",
+      "name": "器件建库计 Agent",
+      "description": "器件建库智能体",
+      "status": "active",
+      "sort": 3
+    },
+    {
+      "id": "4",
+      "code": "schematicAgent",
+      "name": "原理图设计 Agent",
+      "description": "原理图设计智能体",
+      "status": "active",
+      "sort": 4
+    },
+    {
+      "id": "5",
+      "code": "layoutAgent",
+      "name": "Layout 设计 Agent",
+      "description": "Layout设计智能体",
+      "status": "active",
+      "sort": 5
+    },
+    {
+      "id": "6",
+      "code": "routerAgent",
+      "name": "Router 设计 Agent",
+      "description": "Router设计智能体",
+      "status": "active",
+      "sort": 6
+    },
+    {
+      "id": "7",
+      "code": "dfmAgent",
+      "name": "可制造检查 Agent",
+      "description": "可制造性检查智能体",
+      "status": "active",
+      "sort": 7
+    },
+    {
+      "id": "8",
+      "code": "docExtractAgent",
+      "name": "文档提取 Agent",
+      "description": "文档提取智能体",
+      "status": "active",
+      "sort": 8
+    },
+    {
+      "id": "9",
+      "code": "deviceSelectAgent",
+      "name": "器件优选 Agent",
+      "description": "器件优选智能体",
+      "status": "active",
+      "sort": 9
+    },
+    {
+      "id": "10",
+      "code": "purchaseAgent",
+      "name": "智能采购 Agent",
+      "description": "智能采购智能体",
+      "status": "active",
+      "sort": 10
+    },
+    {
+      "id": "11",
+      "code": "asedClaw",
+      "name": "ased Claw",
+      "description": "ased Claw工具",
+      "status": "active",
+      "sort": 11
+    }
+  ],
+  "members": [
+    {
+      "phone": "18500979967",
+      "nickname": "ITLK",
+      "email": "wangzhikuia@126.com",
+      "wechat": "wzkwsn",
+      "packageId": "1",
+      "tokenUsed": 0,
+      "status": "active",
+      "id": "ec27"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "27eb",
+      "userId": "27e3",
+      "packageId": "1",
+      "packageName": "基础套餐",
+      "startTime": "2026-03-19T08:31:24.306Z",
+      "endTime": null,
+      "status": "active",
+      "tokenUsed": 0,
+      "tokenLimit": 10000,
+      "createdAt": "2026-03-19T08:31:24.306Z"
+    },
+    {
+      "id": "9b69",
+      "userId": "27e3",
+      "packageId": "1",
+      "packageName": "免费版",
+      "startTime": "2026-03-21T06:36:30.182Z",
+      "endTime": null,
+      "status": "active",
+      "tokenUsed": 0,
+      "tokenLimit": 10000,
+      "createdAt": "2026-03-21T06:36:30.182Z"
+    },
+    {
+      "id": "c7f7",
+      "userId": "27e3",
+      "packageId": "2",
+      "packageName": "Plus版",
+      "startTime": "2026-03-21T07:05:25.153Z",
+      "endTime": "2026-04-20T07:05:25.153Z",
+      "status": "active",
+      "tokenUsed": 0,
+      "tokenLimit": 100000,
+      "createdAt": "2026-03-21T07:05:25.153Z"
+    },
+    {
+      "id": "25f8",
+      "userId": "27e3",
+      "packageId": "3",
+      "packageName": "Max版",
+      "startTime": "2026-03-21T07:11:08.326Z",
+      "endTime": "2026-04-20T07:11:08.326Z",
+      "status": "active",
+      "tokenUsed": 0,
+      "tokenLimit": 300000,
+      "createdAt": "2026-03-21T07:11:08.326Z"
+    },
+    {
+      "id": "028d",
+      "userId": "27e3",
+      "packageId": "2",
+      "packageName": "Plus版",
+      "startTime": "2026-03-22T12:10:45.098Z",
+      "endTime": "2026-04-21T12:10:45.098Z",
+      "status": "active",
+      "tokenUsed": 0,
+      "tokenLimit": 100000,
+      "createdAt": "2026-03-22T12:10:45.098Z"
+    },
+    {
+      "id": "e54c",
+      "userId": "27e3",
+      "packageId": "2",
+      "packageName": "Plus版",
+      "startTime": "2026-03-22T13:34:15.815Z",
+      "endTime": "2026-04-21T13:34:15.815Z",
+      "status": "active",
+      "tokenUsed": 0,
+      "tokenLimit": 100000,
+      "createdAt": "2026-03-22T13:34:15.815Z"
+    },
+    {
+      "id": "e579",
+      "userId": "3dea",
+      "packageId": "1",
+      "packageName": "免费版",
+      "startTime": "2026-03-24T09:38:08.508Z",
+      "endTime": null,
+      "status": "active",
+      "tokenUsed": 0,
+      "tokenLimit": 100000,
+      "createdAt": "2026-03-24T09:38:08.508Z"
+    },
+    {
+      "id": "fef8",
+      "userId": "ec27",
+      "packageId": "1",
+      "packageName": "免费版",
+      "startTime": "2026-03-24T09:50:05.577Z",
+      "endTime": null,
+      "status": "active",
+      "tokenUsed": 0,
+      "tokenLimit": 100000,
+      "createdAt": "2026-03-24T09:50:05.577Z"
+    },
+    {
+      "id": "becc",
+      "userId": "27e3",
+      "packageId": "3",
+      "packageName": "Max版",
+      "startTime": "2026-03-25T08:02:33.682Z",
+      "endTime": "2026-04-24T08:02:33.682Z",
+      "status": "active",
+      "tokenUsed": 0,
+      "tokenLimit": 3000000,
+      "createdAt": "2026-03-25T08:02:33.682Z"
+    }
+  ],
+  "smsCodes": [
+    {
+      "id": "d97d",
+      "phone": "18500979967",
+      "code": "857081",
+      "createdAt": "2026-03-30T03:16:00.804Z"
+    }
+  ],
+  "agents": [
+    {
+      "id": "23bc",
+      "name": "YilinG ",
+      "code": "yiling",
+      "icon": "🤖",
+      "description": "YilinG智能助手",
+      "status": 1,
+      "sort": 1,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "ac8d",
+      "name": "方案设计",
+      "code": "design",
+      "icon": "📋",
+      "description": "方案设计智能助手",
+      "status": 1,
+      "sort": 2,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "c354",
+      "name": "器件建库",
+      "code": "library",
+      "icon": "📦",
+      "description": "器件建库智能助手",
+      "status": 1,
+      "sort": 3,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "cffd",
+      "name": "原理图设计",
+      "code": "schematic",
+      "icon": "📐",
+      "description": "原理图设计智能助手",
+      "status": 1,
+      "sort": 4,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "1c28",
+      "name": "Layout设计",
+      "code": "layout",
+      "icon": "🎨",
+      "description": "Layout设计智能助手",
+      "status": 1,
+      "sort": 5,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "3811",
+      "name": "Router设计",
+      "code": "router",
+      "icon": "🔀",
+      "description": "Router设计智能助手",
+      "status": 1,
+      "sort": 6,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "c269",
+      "name": "可制造检查",
+      "code": "dfm",
+      "icon": "✅",
+      "description": "可制造检查智能助手",
+      "status": 1,
+      "sort": 7,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "4cc2",
+      "name": "文档提取",
+      "code": "doc",
+      "icon": "📄",
+      "description": "文档提取智能助手",
+      "status": 1,
+      "sort": 8,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "398e",
+      "name": "器件优选",
+      "code": "select",
+      "icon": "⭐",
+      "description": "器件优选智能助手",
+      "status": 1,
+      "sort": 9,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "ac20",
+      "name": "智能采购",
+      "code": "purchase",
+      "icon": "🛒",
+      "description": "智能采购智能助手",
+      "status": 1,
+      "sort": 10,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "0b27",
+      "name": "EASD Claw",
+      "code": "claw",
+      "icon": "🦞",
+      "description": "EASD Claw智能助手",
+      "status": 1,
+      "sort": 11,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "a988",
+      "name": "PCB制造工厂寻源",
+      "code": "factory",
+      "icon": "🏭",
+      "description": "PCB制造工厂寻源智能助手",
+      "status": 1,
+      "sort": 12,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "e7ec",
+      "name": "PCB制造设备寻源",
+      "code": "equipment",
+      "icon": "⚙️",
+      "description": "PCB制造设备寻源智能助手",
+      "status": 1,
+      "sort": 13,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "8c21",
+      "name": "PCB制造材料寻源",
+      "code": "material",
+      "icon": "🧱",
+      "description": "PCB制造材料寻源智能助手",
+      "status": 1,
+      "sort": 14,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "2b7d",
+      "name": "PCB制造周边知识",
+      "code": "knowledge",
+      "icon": "📚",
+      "description": "PCB制造周边知识智能助手",
+      "status": 1,
+      "sort": 15,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "916a",
+      "name": "PCB制造工艺技术",
+      "code": "tech",
+      "icon": "🔧",
+      "description": "PCB制造工艺技术智能助手-迭代",
+      "status": 1,
+      "sort": 16,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "b5ef",
+      "name": "PCB制造标准",
+      "code": "standard",
+      "icon": "📏",
+      "description": "PCB制造标准智能助手-迭代",
+      "status": 1,
+      "sort": 17,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "22bc",
+      "name": "AI辅助创建课程",
+      "code": "course",
+      "icon": "🎓",
+      "description": "AI辅助创建课程智能助手",
+      "status": 1,
+      "sort": 18,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "85a1",
+      "name": "AI出题",
+      "code": "exam",
+      "icon": "📝",
+      "description": "AI出题智能助手",
+      "status": 1,
+      "sort": 19,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    },
+    {
+      "id": "33d7",
+      "name": "AI讲题考试分析",
+      "code": "analysis",
+      "icon": "📊",
+      "description": "AI讲题考试分析智能助手",
+      "status": 1,
+      "sort": 20,
+      "packageIds": [],
+      "difyApiUrl": "",
+      "difyApiKey": "",
+      "difyChatUrl": "/chat-messages",
+      "difyFileUrl": "/files/upload"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "6cf2",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:07:13.553Z",
+      "updatedAt": "2026-03-25T03:07:13.553Z"
+    },
+    {
+      "id": "c82c",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:20:12.620Z",
+      "updatedAt": "2026-03-25T03:20:12.620Z"
+    },
+    {
+      "id": "5ebe",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:20:13.844Z",
+      "updatedAt": "2026-03-25T03:20:13.844Z"
+    },
+    {
+      "id": "8f5b",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:20:14.378Z",
+      "updatedAt": "2026-03-25T03:20:14.378Z"
+    },
+    {
+      "id": "80d2",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:20:15.423Z",
+      "updatedAt": "2026-03-25T03:20:15.423Z"
+    },
+    {
+      "id": "f268",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:20:22.316Z",
+      "updatedAt": "2026-03-25T03:20:22.316Z"
+    },
+    {
+      "id": "3fbb",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:20:23.175Z",
+      "updatedAt": "2026-03-25T03:20:23.175Z"
+    },
+    {
+      "id": "94fe",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:23:52.435Z",
+      "updatedAt": "2026-03-25T03:23:52.435Z"
+    },
+    {
+      "id": "b650",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:23:53.484Z",
+      "updatedAt": "2026-03-25T03:23:53.484Z"
+    },
+    {
+      "id": "9367",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:23:54.114Z",
+      "updatedAt": "2026-03-25T03:23:54.114Z"
+    },
+    {
+      "id": "0785",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:23:54.671Z",
+      "updatedAt": "2026-03-25T03:23:54.671Z"
+    },
+    {
+      "id": "0d31",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:23:59.760Z",
+      "updatedAt": "2026-03-25T03:23:59.760Z"
+    },
+    {
+      "id": "6313",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:24:00.722Z",
+      "updatedAt": "2026-03-25T03:24:00.722Z"
+    },
+    {
+      "id": "bb38",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:24:20.836Z",
+      "updatedAt": "2026-03-25T03:24:20.836Z"
+    },
+    {
+      "id": "eefa",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:24:21.860Z",
+      "updatedAt": "2026-03-25T03:24:21.860Z"
+    },
+    {
+      "id": "19c2",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:24:22.400Z",
+      "updatedAt": "2026-03-25T03:24:22.400Z"
+    },
+    {
+      "id": "07cb",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:24:23.023Z",
+      "updatedAt": "2026-03-25T03:24:23.023Z"
+    },
+    {
+      "id": "611d",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:24:23.673Z",
+      "updatedAt": "2026-03-25T03:24:23.673Z"
+    },
+    {
+      "id": "eca9",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:37:32.983Z",
+      "updatedAt": "2026-03-25T03:37:32.983Z"
+    },
+    {
+      "id": "d0ed",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:37:33.647Z",
+      "updatedAt": "2026-03-25T03:37:33.647Z"
+    },
+    {
+      "id": "0282",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:37:35.067Z",
+      "updatedAt": "2026-03-25T03:37:35.067Z"
+    },
+    {
+      "id": "b2df",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:40:33.776Z",
+      "updatedAt": "2026-03-25T03:40:33.777Z"
+    },
+    {
+      "id": "4a98",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:40:35.352Z",
+      "updatedAt": "2026-03-25T03:40:35.352Z"
+    },
+    {
+      "id": "57dc",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T03:40:36.136Z",
+      "updatedAt": "2026-03-25T03:40:36.136Z"
+    },
+    {
+      "id": "a078",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:01:56.278Z",
+      "updatedAt": "2026-03-25T06:01:56.278Z"
+    },
+    {
+      "id": "1f3f",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:04:17.823Z",
+      "updatedAt": "2026-03-25T06:04:17.823Z"
+    },
+    {
+      "id": "6d78",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:04:18.702Z",
+      "updatedAt": "2026-03-25T06:04:18.702Z"
+    },
+    {
+      "id": "7e46",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:04:19.308Z",
+      "updatedAt": "2026-03-25T06:04:19.308Z"
+    },
+    {
+      "id": "f073",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:04:20.297Z",
+      "updatedAt": "2026-03-25T06:04:20.297Z"
+    },
+    {
+      "id": "f29c",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:06:00.790Z",
+      "updatedAt": "2026-03-25T06:06:00.790Z"
+    },
+    {
+      "id": "08d6",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-25T06:06:05.124Z",
+      "updatedAt": "2026-03-25T06:06:12.153Z"
+    },
+    {
+      "id": "09e4",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "测试",
+      "createdAt": "2026-03-25T06:08:12.514Z",
+      "updatedAt": "2026-03-25T06:08:16.656Z"
+    },
+    {
+      "id": "348d",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:08:54.238Z",
+      "updatedAt": "2026-03-25T06:08:54.238Z"
+    },
+    {
+      "id": "82f5",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好你是",
+      "createdAt": "2026-03-25T06:29:59.750Z",
+      "updatedAt": "2026-03-25T06:30:07.630Z"
+    },
+    {
+      "id": "dde0",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "测试",
+      "createdAt": "2026-03-25T06:10:48.876Z",
+      "updatedAt": "2026-03-25T06:10:51.483Z"
+    },
+    {
+      "id": "fd74",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "1",
+      "createdAt": "2026-03-25T06:12:08.221Z",
+      "updatedAt": "2026-03-25T06:12:25.141Z"
+    },
+    {
+      "id": "64b8",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-25T06:13:42.039Z",
+      "updatedAt": "2026-03-25T06:14:33.136Z"
+    },
+    {
+      "id": "0fa0",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "测试",
+      "createdAt": "2026-03-25T06:15:41.591Z",
+      "updatedAt": "2026-03-25T06:15:46.332Z"
+    },
+    {
+      "id": "c5a4",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "你是什么模型",
+      "createdAt": "2026-03-25T06:17:09.476Z",
+      "updatedAt": "2026-03-25T06:17:49.876Z"
+    },
+    {
+      "id": "3a08",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:20:14.575Z",
+      "updatedAt": "2026-03-25T06:20:14.575Z"
+    },
+    {
+      "id": "4b56",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "测试",
+      "createdAt": "2026-03-25T06:26:37.724Z",
+      "updatedAt": "2026-03-25T06:26:43.563Z"
+    },
+    {
+      "id": "517c",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:26:55.053Z",
+      "updatedAt": "2026-03-25T06:26:55.053Z"
+    },
+    {
+      "id": "3bb9",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "测试",
+      "createdAt": "2026-03-25T06:26:55.694Z",
+      "updatedAt": "2026-03-25T06:27:03.233Z"
+    },
+    {
+      "id": "82f5",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:29:59.750Z",
+      "updatedAt": "2026-03-25T06:29:59.750Z"
+    },
+    {
+      "id": "1da8",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "测试",
+      "createdAt": "2026-03-25T06:34:04.510Z",
+      "updatedAt": "2026-03-25T06:34:19.854Z"
+    },
+    {
+      "id": "4c90",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:35:02.603Z",
+      "updatedAt": "2026-03-25T06:35:02.603Z"
+    },
+    {
+      "id": "ac94",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-25T06:35:34.155Z",
+      "updatedAt": "2026-03-25T06:35:40.937Z"
+    },
+    {
+      "id": "ef19",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "度",
+      "createdAt": "2026-03-25T06:35:47.750Z",
+      "updatedAt": "2026-03-25T06:35:52.141Z"
+    },
+    {
+      "id": "f96d",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "ceshi",
+      "createdAt": "2026-03-25T06:36:33.862Z",
+      "updatedAt": "2026-03-25T06:36:37.578Z"
+    },
+    {
+      "id": "0d4e",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:38:07.657Z",
+      "updatedAt": "2026-03-25T06:38:07.657Z"
+    },
+    {
+      "id": "b1a9",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:38:08.781Z",
+      "updatedAt": "2026-03-25T06:38:08.781Z"
+    },
+    {
+      "id": "4e25",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:38:09.265Z",
+      "updatedAt": "2026-03-25T06:38:09.265Z"
+    },
+    {
+      "id": "e1a2",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T06:38:09.851Z",
+      "updatedAt": "2026-03-25T06:38:09.851Z"
+    },
+    {
+      "id": "fa32",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-25T06:38:10.536Z",
+      "updatedAt": "2026-03-25T06:38:14.548Z"
+    },
+    {
+      "id": "7865",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "hello",
+      "createdAt": "2026-03-25T06:39:46.030Z",
+      "updatedAt": "2026-03-25T06:39:53.470Z"
+    },
+    {
+      "id": "b262",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "hello",
+      "createdAt": "2026-03-25T06:41:25.374Z",
+      "updatedAt": "2026-03-25T06:41:29.934Z"
+    },
+    {
+      "id": "bbb4",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "测试",
+      "createdAt": "2026-03-25T06:45:16.707Z",
+      "updatedAt": "2026-03-25T06:45:42.891Z"
+    },
+    {
+      "id": "005a",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好，你是什么模型",
+      "createdAt": "2026-03-25T06:50:29.011Z",
+      "updatedAt": "2026-03-25T06:50:36.101Z"
+    },
+    {
+      "id": "e810",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好，您是什么模型",
+      "createdAt": "2026-03-25T06:51:38.865Z",
+      "updatedAt": "2026-03-25T06:51:52.757Z"
+    },
+    {
+      "id": "a7c1",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-25T07:04:06.907Z",
+      "updatedAt": "2026-03-25T07:04:26.190Z"
+    },
+    {
+      "id": "6ed0",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-25T07:04:48.970Z",
+      "updatedAt": "2026-03-25T07:05:12.601Z"
+    },
+    {
+      "id": "4563",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T07:05:57.521Z",
+      "updatedAt": "2026-03-25T07:05:57.521Z"
+    },
+    {
+      "id": "aaf6",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "测试",
+      "createdAt": "2026-03-25T07:08:44.291Z",
+      "updatedAt": "2026-03-25T07:08:49.399Z"
+    },
+    {
+      "id": "81ec",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-25T07:11:17.276Z",
+      "updatedAt": "2026-03-25T07:23:06.067Z"
+    },
+    {
+      "id": "c002",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-25T07:24:17.437Z",
+      "updatedAt": "2026-03-25T07:24:22.192Z"
+    },
+    {
+      "id": "2f3e",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T07:26:02.348Z",
+      "updatedAt": "2026-03-25T07:26:02.348Z"
+    },
+    {
+      "id": "e7e3",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T07:26:58.309Z",
+      "updatedAt": "2026-03-25T07:26:58.309Z"
+    },
+    {
+      "id": "52f6",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "金浩",
+      "createdAt": "2026-03-25T07:27:27.870Z",
+      "updatedAt": "2026-03-25T07:27:29.993Z"
+    },
+    {
+      "id": "be0e",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-25T07:28:16.337Z",
+      "updatedAt": "2026-03-25T07:30:17.705Z"
+    },
+    {
+      "id": "f4e4",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T08:00:38.558Z",
+      "updatedAt": "2026-03-25T08:00:38.558Z"
+    },
+    {
+      "id": "0776",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T08:02:43.570Z",
+      "updatedAt": "2026-03-25T08:02:43.570Z"
+    },
+    {
+      "id": "42e1",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T08:02:43.877Z",
+      "updatedAt": "2026-03-25T08:02:43.877Z"
+    },
+    {
+      "id": "c952",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T08:02:44.154Z",
+      "updatedAt": "2026-03-25T08:02:44.154Z"
+    },
+    {
+      "id": "dbfb",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "测试",
+      "createdAt": "2026-03-25T08:08:03.011Z",
+      "updatedAt": "2026-03-25T08:08:08.900Z"
+    },
+    {
+      "id": "beae",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-25T23:37:34.620Z",
+      "updatedAt": "2026-03-25T23:37:34.620Z"
+    },
+    {
+      "id": "3ed0",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "你是什么智能体",
+      "createdAt": "2026-03-26T05:40:05.438Z",
+      "updatedAt": "2026-03-26T05:40:15.841Z"
+    },
+    {
+      "id": "3583",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "您好",
+      "createdAt": "2026-03-26T05:42:00.754Z",
+      "updatedAt": "2026-03-26T05:42:40.986Z"
+    },
+    {
+      "id": "c18d",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "介绍一下你自己",
+      "createdAt": "2026-03-26T05:43:12.908Z",
+      "updatedAt": "2026-03-26T05:43:50.282Z"
+    },
+    {
+      "id": "99a7",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-27T02:21:25.160Z",
+      "updatedAt": "2026-03-27T02:21:25.160Z"
+    },
+    {
+      "id": "2fc2",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-27T02:21:26.237Z",
+      "updatedAt": "2026-03-27T02:21:26.237Z"
+    },
+    {
+      "id": "e9da",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-27T02:21:26.901Z",
+      "updatedAt": "2026-03-27T02:21:26.901Z"
+    },
+    {
+      "id": "36b0",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-27T02:21:27.709Z",
+      "updatedAt": "2026-03-27T02:21:27.709Z"
+    },
+    {
+      "id": "a80c",
+      "userId": "27e3",
+      "agentId": null,
+      "title": "新对话",
+      "createdAt": "2026-03-30T01:51:11.861Z",
+      "updatedAt": "2026-03-30T01:51:11.861Z"
+    },
+    {
+      "id": "5fdc",
+      "userId": "1",
+      "agentId": null,
+      "title": "新对话",
+      "status": "active"
+    }
+  ],
+  "messages": [
+    {
+      "id": "bd82",
+      "conversationId": "08d6",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T06:06:12.088Z"
+    },
+    {
+      "id": "51f1",
+      "conversationId": "08d6",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T06:06:19.640Z"
+    },
+    {
+      "id": "a3e0",
+      "conversationId": "09e4",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T06:08:16.616Z"
+    },
+    {
+      "id": "ab8d",
+      "conversationId": "dde0",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T06:10:51.428Z"
+    },
+    {
+      "id": "2b28",
+      "conversationId": "fd74",
+      "role": "user",
+      "content": "1",
+      "createdAt": "2026-03-25T06:12:10.850Z"
+    },
+    {
+      "id": "5224",
+      "conversationId": "fd74",
+      "role": "assistant",
+      "content": "Hello! I'm here to help. Could you please provide more details or clarify your question so I can assist you better?",
+      "createdAt": "2026-03-25T06:12:13.290Z"
+    },
+    {
+      "id": "48fe",
+      "conversationId": "fd74",
+      "role": "user",
+      "content": "你是什么模型",
+      "createdAt": "2026-03-25T06:12:21.666Z"
+    },
+    {
+      "id": "bc58",
+      "conversationId": "fd74",
+      "role": "assistant",
+      "content": "我是一个AI助手，基于大型语言模型技术构建，专门用于回答问题、提供信息和协助完成任务。我的具体版本和架构细节可能因部署环境而异，但核心功能是理解和生成自然语言响应。",
+      "createdAt": "2026-03-25T06:12:25.135Z"
+    },
+    {
+      "id": "d4f8",
+      "conversationId": "64b8",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T06:13:45.442Z"
+    },
+    {
+      "id": "6cfe",
+      "conversationId": "64b8",
+      "role": "assistant",
+      "content": "您好！请问有什么可以帮您的吗？",
+      "createdAt": "2026-03-25T06:13:47.595Z"
+    },
+    {
+      "id": "0468",
+      "conversationId": "64b8",
+      "role": "user",
+      "content": "您是谁",
+      "createdAt": "2026-03-25T06:13:52.356Z"
+    },
+    {
+      "id": "6999",
+      "conversationId": "64b8",
+      "role": "assistant",
+      "content": "我是一个AI助手，旨在帮助您解答问题、提供信息和协助完成任务。如果您有任何问题或需要帮助，请随时告诉我！",
+      "createdAt": "2026-03-25T06:13:55.262Z"
+    },
+    {
+      "id": "9940",
+      "conversationId": "64b8",
+      "role": "user",
+      "content": "王智魁是谁",
+      "createdAt": "2026-03-25T06:14:08.899Z"
+    },
+    {
+      "id": "2241",
+      "conversationId": "64b8",
+      "role": "assistant",
+      "content": "王智魁是中国的一位教育工作者和记忆培训专家，以教授高效记忆方法和学习技巧而闻名。他创办了相关的记忆培训课程，并致力于帮助人们提升学习效率和记忆力。",
+      "createdAt": "2026-03-25T06:14:11.742Z"
+    },
+    {
+      "id": "8a8d",
+      "conversationId": "64b8",
+      "role": "user",
+      "content": "你用的什么模型",
+      "createdAt": "2026-03-25T06:14:29.759Z"
+    },
+    {
+      "id": "d11e",
+      "conversationId": "64b8",
+      "role": "assistant",
+      "content": "我是基于OpenAI的GPT（生成式预训练变换器）架构的AI模型，具体版本可能因部署环境而异。我能理解和生成多种语言的文本，协助回答各种问题。",
+      "createdAt": "2026-03-25T06:14:33.129Z"
+    },
+    {
+      "id": "c7af",
+      "conversationId": "0fa0",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T06:15:44.228Z"
+    },
+    {
+      "id": "abf7",
+      "conversationId": "0fa0",
+      "role": "assistant",
+      "content": "",
+      "createdAt": "2026-03-25T06:15:46.320Z"
+    },
+    {
+      "id": "b1fe",
+      "conversationId": "c5a4",
+      "role": "user",
+      "content": "你是什么模型",
+      "createdAt": "2026-03-25T06:17:16.429Z"
+    },
+    {
+      "id": "10a3",
+      "conversationId": "c5a4",
+      "role": "assistant",
+      "content": " The user is asking what model I am. I don't need any tools to answer this question as I have this information directly available.\n\n\n我是DeepSeek-V3，由深度求索公司开发的大语言模型。我可以回答各种问题、协助写作、翻译、编程等多种任务。",
+      "createdAt": "2026-03-25T06:17:19.479Z"
+    },
+    {
+      "id": "cc31",
+      "conversationId": "c5a4",
+      "role": "user",
+      "content": "宁浩",
+      "createdAt": "2026-03-25T06:17:44.280Z"
+    },
+    {
+      "id": "35ad",
+      "conversationId": "c5a4",
+      "role": "assistant",
+      "content": "宁浩是中国著名导演、编剧和制片人，出生于1977年9月9日，山西太原人。他以黑色幽默和多元叙事风格著称，是中国新生代导演的代表人物之一。\n\n主要作品包括：\n- 《疯狂的石头》（2006年）——成名作，低成本喜剧，获得巨大成功\n- 《疯狂的赛车》（2009年）\n- 《无人区》（2013年）\n- 《心花路放》（2014年）\n- 《疯狂的外星人》（2019年）\n\n宁浩的电影通常以小人物的故事为切入点，融合喜剧、犯罪、荒诞等元素，具有强烈的个人风格。他还通过\"坏猴子72变电影计划\"扶持了一批新生代导演，如文牧野（《我不是药神》导演）。",
+      "createdAt": "2026-03-25T06:17:49.865Z"
+    },
+    {
+      "id": "2cc3",
+      "conversationId": "4b56",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T06:26:41.135Z"
+    },
+    {
+      "id": "5d3b",
+      "conversationId": "4b56",
+      "role": "assistant",
+      "content": "您好！请问有什么我可以帮助您的？如果您有任何问题或需要协助，请随时告诉我。",
+      "createdAt": "2026-03-25T06:26:43.552Z"
+    },
+    {
+      "id": "9aed",
+      "conversationId": "3bb9",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T06:27:00.885Z"
+    },
+    {
+      "id": "d8b6",
+      "conversationId": "3bb9",
+      "role": "assistant",
+      "content": "您好！我注意到您输入了“测试”。请问有什么具体的问题或需要帮助的吗？",
+      "createdAt": "2026-03-25T06:27:03.225Z"
+    },
+    {
+      "id": "6059",
+      "conversationId": "82f5",
+      "role": "user",
+      "content": "您好你是",
+      "createdAt": "2026-03-25T06:30:05.742Z"
+    },
+    {
+      "id": "9c17",
+      "conversationId": "82f5",
+      "role": "assistant",
+      "content": "您好！我是一个AI助手，很高兴为您服务。请问有什么我可以帮助您的吗？",
+      "createdAt": "2026-03-25T06:30:07.620Z"
+    },
+    {
+      "id": "f33a",
+      "conversationId": "1da8",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T06:34:07.160Z"
+    },
+    {
+      "id": "04e5",
+      "conversationId": "1da8",
+      "role": "assistant",
+      "content": "您好！我是AI助手，请问有什么可以帮您的吗？",
+      "createdAt": "2026-03-25T06:34:08.992Z"
+    },
+    {
+      "id": "082e",
+      "conversationId": "1da8",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T06:34:17.868Z"
+    },
+    {
+      "id": "803d",
+      "conversationId": "1da8",
+      "role": "assistant",
+      "content": "您好！请问有什么我可以帮助您的吗？",
+      "createdAt": "2026-03-25T06:34:19.840Z"
+    },
+    {
+      "id": "930b",
+      "conversationId": "ac94",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T06:35:39.103Z"
+    },
+    {
+      "id": "78e0",
+      "conversationId": "ac94",
+      "role": "assistant",
+      "content": "您好！很高兴为您服务。请问有什么我可以帮助您的吗？",
+      "createdAt": "2026-03-25T06:35:40.929Z"
+    },
+    {
+      "id": "6bd6",
+      "conversationId": "ef19",
+      "role": "user",
+      "content": "度",
+      "createdAt": "2026-03-25T06:35:49.333Z"
+    },
+    {
+      "id": "9b65",
+      "conversationId": "ef19",
+      "role": "assistant",
+      "content": "I understand you've written the Chinese character \"度\" (dù). This character has multiple meanings including degree, measure, limit, or a unit for angles/temperature. Could you please provide more context or clarify what you'd like to know about this character?",
+      "createdAt": "2026-03-25T06:35:52.131Z"
+    },
+    {
+      "id": "42d7",
+      "conversationId": "f96d",
+      "role": "user",
+      "content": "ceshi",
+      "createdAt": "2026-03-25T06:36:35.624Z"
+    },
+    {
+      "id": "4f0a",
+      "conversationId": "f96d",
+      "role": "assistant",
+      "content": "I'm here to help! Could you please provide more details or clarify what you'd like assistance with?",
+      "createdAt": "2026-03-25T06:36:37.569Z"
+    },
+    {
+      "id": "7dd5",
+      "conversationId": "fa32",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T06:38:12.769Z"
+    },
+    {
+      "id": "b359",
+      "conversationId": "fa32",
+      "role": "assistant",
+      "content": "您好！很高兴为您服务。请问有什么可以帮助您的吗？",
+      "createdAt": "2026-03-25T06:38:14.540Z"
+    },
+    {
+      "id": "567c",
+      "conversationId": "7865",
+      "role": "user",
+      "content": "hello",
+      "createdAt": "2026-03-25T06:39:51.715Z"
+    },
+    {
+      "id": "5746",
+      "conversationId": "7865",
+      "role": "assistant",
+      "content": "Hello! How can I help you today?",
+      "createdAt": "2026-03-25T06:39:53.459Z"
+    },
+    {
+      "id": "2df6",
+      "conversationId": "b262",
+      "role": "user",
+      "content": "hello",
+      "createdAt": "2026-03-25T06:41:28.213Z"
+    },
+    {
+      "id": "08c3",
+      "conversationId": "b262",
+      "role": "assistant",
+      "content": "Hello! How can I help you today?",
+      "createdAt": "2026-03-25T06:41:29.925Z"
+    },
+    {
+      "id": "cb2c",
+      "conversationId": "bbb4",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T06:45:20.764Z"
+    },
+    {
+      "id": "9feb",
+      "conversationId": "bbb4",
+      "role": "assistant",
+      "content": "测试",
+      "createdAt": "2026-03-25T06:45:22.410Z"
+    },
+    {
+      "id": "ae04",
+      "conversationId": "bbb4",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T06:45:29.098Z"
+    },
+    {
+      "id": "2794",
+      "conversationId": "bbb4",
+      "role": "assistant",
+      "content": "您好！请问有什么我可以帮助您的吗？",
+      "createdAt": "2026-03-25T06:45:31.045Z"
+    },
+    {
+      "id": "8f44",
+      "conversationId": "bbb4",
+      "role": "user",
+      "content": "您是什么模型",
+      "createdAt": "2026-03-25T06:45:40.272Z"
+    },
+    {
+      "id": "3f78",
+      "conversationId": "bbb4",
+      "role": "assistant",
+      "content": "我是一个基于大型语言模型的人工智能助手，由深度求索公司开发。我的具体版本是DeepSeek-V3，具备强大的自然语言理解和生成能力，可以帮助您回答各种问题、提供信息和建议。",
+      "createdAt": "2026-03-25T06:45:42.884Z"
+    },
+    {
+      "id": "7b54",
+      "conversationId": "005a",
+      "role": "user",
+      "content": "您好，你是什么模型",
+      "createdAt": "2026-03-25T06:50:33.579Z"
+    },
+    {
+      "id": "bd72",
+      "conversationId": "005a",
+      "role": "assistant",
+      "content": "您好！我是一个AI语言模型，基于深度学习技术训练而成，专门用于理解和生成自然语言文本。我可以回答问题、提供信息、协助创作等多种任务。请问有什么可以帮助您的？",
+      "createdAt": "2026-03-25T06:50:36.091Z"
+    },
+    {
+      "id": "da9b",
+      "conversationId": "e810",
+      "role": "user",
+      "content": "您好，您是什么模型",
+      "createdAt": "2026-03-25T06:51:50.282Z"
+    },
+    {
+      "id": "f3ea",
+      "conversationId": "e810",
+      "role": "assistant",
+      "content": "您好！我是一个AI助手，基于大语言模型技术构建。我可以回答您的问题、提供信息帮助和进行对话交流。请问有什么可以帮您的吗？",
+      "createdAt": "2026-03-25T06:51:52.744Z"
+    },
+    {
+      "id": "f0be",
+      "conversationId": "a7c1",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T07:04:24.265Z"
+    },
+    {
+      "id": "d2e7",
+      "conversationId": "a7c1",
+      "role": "assistant",
+      "content": "您好！请问有什么可以帮助您的吗？",
+      "createdAt": "2026-03-25T07:04:26.173Z"
+    },
+    {
+      "id": "624c",
+      "conversationId": "6ed0",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T07:05:10.850Z"
+    },
+    {
+      "id": "e010",
+      "conversationId": "6ed0",
+      "role": "assistant",
+      "content": "您好！有什么我可以帮助您的吗？",
+      "createdAt": "2026-03-25T07:05:12.586Z"
+    },
+    {
+      "id": "fb35",
+      "conversationId": "aaf6",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T07:08:47.246Z"
+    },
+    {
+      "id": "ae76",
+      "conversationId": "aaf6",
+      "role": "assistant",
+      "content": "I'm here to help! Please provide more details about what you'd like to test or ask.",
+      "createdAt": "2026-03-25T07:08:49.387Z"
+    },
+    {
+      "id": "288f",
+      "conversationId": "81ec",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T07:11:21.321Z"
+    },
+    {
+      "id": "d6c5",
+      "conversationId": "81ec",
+      "role": "assistant",
+      "content": "您好！很高兴为您服务。请问有什么我可以帮助您的吗？",
+      "createdAt": "2026-03-25T07:11:23.134Z"
+    },
+    {
+      "id": "fdfe",
+      "conversationId": "81ec",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T07:23:04.114Z"
+    },
+    {
+      "id": "c35c",
+      "conversationId": "81ec",
+      "role": "assistant",
+      "content": "您好！请问有什么可以帮助您的吗？",
+      "createdAt": "2026-03-25T07:23:06.054Z"
+    },
+    {
+      "id": "60d4",
+      "conversationId": "c002",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T07:24:20.105Z"
+    },
+    {
+      "id": "32d2",
+      "conversationId": "c002",
+      "role": "assistant",
+      "content": "您好！有什么我可以帮助您的吗？",
+      "createdAt": "2026-03-25T07:24:22.179Z"
+    },
+    {
+      "id": "84b3",
+      "conversationId": "52f6",
+      "role": "user",
+      "content": "金浩",
+      "createdAt": "2026-03-25T07:27:29.974Z"
+    },
+    {
+      "id": "510a",
+      "conversationId": "52f6",
+      "role": "assistant",
+      "content": "I'm sorry, but I don't have enough context to understand what you're asking about \"金浩\". Could you please provide more details or clarify your question?",
+      "createdAt": "2026-03-25T07:27:32.356Z"
+    },
+    {
+      "id": "0ac4",
+      "conversationId": "be0e",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-25T07:28:18.580Z"
+    },
+    {
+      "id": "c7bd",
+      "conversationId": "be0e",
+      "role": "assistant",
+      "content": "您好！很高兴为您服务。请问有什么可以帮助您的吗？",
+      "createdAt": "2026-03-25T07:28:20.382Z"
+    },
+    {
+      "id": "8bf6",
+      "conversationId": "be0e",
+      "role": "user",
+      "content": "问题头像和问题靠左边，跟AI助手回答都在左侧",
+      "createdAt": "2026-03-25T07:28:47.331Z"
+    },
+    {
+      "id": "30af",
+      "conversationId": "be0e",
+      "role": "assistant",
+      "content": "我理解您的意思。您希望对话界面中，问题和AI回答都显示在左侧（而不是传统的用户右侧、AI左侧的布局）。这种界面设计通常需要前端开发来实现，通过CSS调整对话气泡的位置和样式。如果您需要具体的技术实现方案，请提供更多细节（比如使用的框架或平台），我可以给出更具体的建议。",
+      "createdAt": "2026-03-25T07:28:50.665Z"
+    },
+    {
+      "id": "675a",
+      "conversationId": "be0e",
+      "role": "user",
+      "content": "openclaw如何安装，以及如何对接飞书，详细一点",
+      "createdAt": "2026-03-25T07:29:59.893Z"
+    },
+    {
+      "id": "09b9",
+      "conversationId": "be0e",
+      "role": "assistant",
+      "content": "bash\\npip install openclaw\\nbash\\ngit clone https://github.com/open-claw/openclaw.git\\ncd openclaw\\npip install -e .\\nbash\\ndocker pull openclaw/openclaw:latest\\ndocker run -it openclaw/openclaw:latest\\nbash\\npython -c \\\"import openclaw; print('OpenClaw安装成功')\\\"\\n``yaml\\nfeishu:\\n  app_id: your_app_id\\n  app_secret: your_app_secret\\n  verification_token: your_verification_token\\n  encrypt_key: your_encrypt_key  # 如需加密\\n  \\nopenclaw:\\n  model: gpt-4  # 或其他支持的模型\\n  api_key: your_openai_api_key\\nbash\\n# 启动飞书机器人服务\\nopenclaw feishu --config config.yaml\\n\\n# 或者使用代码方式\\nfrom openclaw.integrations.feishu import FeishuBot\\n\\nbot = FeishuBot(config_path='config.yaml')\\nbot.start()\\n``python\\nfrom openclaw.integrations.feishu import FeishuBot\\nfrom openclaw.core.handler import MessageHandler\\n\\nclass CustomHandler(MessageHandler):\\n    async def handle_message(self, message):\\n        # 自定义消息处理逻辑\\n        return \\\"处理后的回复\\\"\\n\\nbot = FeishuBot(handler=CustomHandler())\\nyaml\\nfeishu:\\n  tenants:\\n    - app_id: app1_id\\n      app_secret: app1_secret\\n    - app_id: app2_id\\n      app_secret: app2_secret\\n我来为您详细说明OpenClaw的安装和飞书对接流程：\n\n## OpenClaw 安装步骤\n\n### 环境要求\n- Python 3.8+\n- Git\n- pip 包管理工具\n\n### 安装方式\n\n**方式一：pip安装**\n```\n\n**方式二：源码安装**\n```\n\n**方式三：Docker安装**\n```\n\n### 验证安装\n```\n\n## 飞书对接配置\n\n### 1. 创建飞书应用\n- 登录飞书开放平台 (https://open.feishu.cn)\n- 创建企业自建应用\n- 获取 App ID 和 App Secret\n\n### 2. 配置权限\n- 启用机器人功能\n- 添加消息接收权限\n- 配置事件订阅（如需）\n\n### 3. OpenClaw配置\n\n创建配置文件 `config.yaml`:\n```\n\n### 4. 启动服务\n```\n\n### 5. 配置Webhook\n- 在飞书应用后台配置请求地址URL\n- URL格式：`https://your-domain.com/feishu/webhook`\n- 启用相应的消息类型\n\n### 6. 测试对接\n- 在飞书群组中@机器人发送消息\n- 检查是否正常回复\n\n## 高级配置选项\n\n### 自定义处理逻辑\n```\n\n### 多租户支持\n```\n\n## 注意事项\n\n1. **网络要求**：确保服务器可以访问飞书API和OpenAI API\n2. **安全配置**：妥善保管API密钥和令牌\n3. **性能优化**：根据并发量调整服务器配置\n4. **日志监控**：建议启用日志记录以便排查问题\n\n如果需要更详细的配置说明或遇到具体问题，建议查阅OpenClaw官方文档或飞书开放平台文档。",
+      "createdAt": "2026-03-25T07:30:17.690Z"
+    },
+    {
+      "id": "48d9",
+      "conversationId": "dbfb",
+      "role": "user",
+      "content": "测试",
+      "createdAt": "2026-03-25T08:08:06.642Z"
+    },
+    {
+      "id": "b8e1",
+      "conversationId": "dbfb",
+      "role": "assistant",
+      "content": "I'm here to help! Could you please provide more details about what you'd like me to test or assist with?",
+      "createdAt": "2026-03-25T08:08:08.886Z"
+    },
+    {
+      "id": "2ee6",
+      "conversationId": "3ed0",
+      "role": "user",
+      "content": "你是什么智能体",
+      "createdAt": "2026-03-26T05:40:13.247Z"
+    },
+    {
+      "id": "96c0",
+      "conversationId": "3ed0",
+      "role": "assistant",
+      "content": "我是一个AI助手，旨在以最有帮助和最准确的方式回答您的问题。请问有什么我可以帮助您的？",
+      "createdAt": "2026-03-26T05:40:15.826Z"
+    },
+    {
+      "id": "6892",
+      "conversationId": "3583",
+      "role": "user",
+      "content": "您好",
+      "createdAt": "2026-03-26T05:42:03.737Z"
+    },
+    {
+      "id": "85b0",
+      "conversationId": "3583",
+      "role": "assistant",
+      "content": "您好！很高兴为您服务。请问有什么我可以帮助您的吗？",
+      "createdAt": "2026-03-26T05:42:06.027Z"
+    },
+    {
+      "id": "fe91",
+      "conversationId": "3583",
+      "role": "user",
+      "content": "帮我查一下",
+      "createdAt": "2026-03-26T05:42:38.623Z"
+    },
+    {
+      "id": "3503",
+      "conversationId": "3583",
+      "role": "assistant",
+      "content": "我目前无法进行查询功能。如果您需要查找信息，建议您直接使用搜索引擎或相关专业平台获取准确结果。",
+      "createdAt": "2026-03-26T05:42:40.965Z"
+    },
+    {
+      "id": "5937",
+      "conversationId": "c18d",
+      "role": "user",
+      "content": "介绍一下你自己",
+      "createdAt": "2026-03-26T05:43:19.956Z"
+    },
+    {
+      "id": "bbaa",
+      "conversationId": "c18d",
+      "role": "assistant",
+      "content": "The user is asking me to introduce myself. Since I don't have access to any tools for this, I should respond directly with a helpful and accurate introduction about who I am.\n\n我是DeepSeek-V3，由深度求索公司开发的一款AI助手。我擅长回答问题、提供信息、协助写作、分析数据等多种任务。我具备强大的自然语言处理能力，能够理解和生成中文、英文等多种语言。我没有访问互联网的实时能力，但我的知识截止到2024年7月，可以帮助解答许多领域的问题。如果有任何需要，请随时告诉我！",
+      "createdAt": "2026-03-26T05:43:24.597Z"
+    },
+    {
+      "id": "d926",
+      "conversationId": "c18d",
+      "role": "user",
+      "content": "pcb前十的公司",
+      "createdAt": "2026-03-26T05:43:44.640Z"
+    },
+    {
+      "id": "384d",
+      "conversationId": "c18d",
+      "role": "assistant",
+      "content": "根据2023年全球PCB（印制电路板）行业排名，前十的公司通常包括：\n1. 臻鼎科技（Zhen Ding Tech）\n2. 欣兴电子（Unimicron）\n3. 三星电机（Samsung Electro-Mechanics）\n4. 东山精密（DSBJ）\n5. 健鼎科技（Tripod Technology）\n6. 深南电路（SCC）\n7. 华通电脑（Compeq）\n8. 瀚宇博德（HannStar Board）\n9. 沪电股份（WUS Printed Circuit）\n10. 景旺电子（Kinwong）\n\n排名可能因年份、市场变化而略有调整，建议参考最新行业报告获取准确信息。",
+      "createdAt": "2026-03-26T05:43:50.243Z"
+    },
+    {
+      "id": "dbd2",
+      "conversationId": "5fdc",
+      "role": "assistant",
+      "content": "抱歉，我没有收到有效的回复"
+    }
+  ],
+  "articleCategories": [
+    {
+      "id": "openclaw",
+      "name": "OpenClaw",
+      "icon": "🦞",
+      "order": 1
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

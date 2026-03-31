@@ -32,7 +32,7 @@ https://open.bigmodel.cn/
       },
       {
         "name": "ANTHROPIC_AUTH_TOKEN",
-        "value": "3d0a8cfbfb4782405604051c16e5b18b.FkC4wknXV7wmmqNI"
+        "value": "YOUR_TOKEN"
       },
       {
         "name": "API_TIMEOUT_MS",
@@ -75,7 +75,7 @@ https://platform.minimaxi.com/docs/guides/text-ai-coding-tools#%E5%9C%A8-trae-%E
 	},
 	{
 		"name": "ANTHROPIC_AUTH_TOKEN",
-		"value": "sk-cp-D1-4VSJwe084pq1nPUTobmToDERHYA1k5_rF8nHLTwTre5uvUHL9we59CYkP_pDFm36TXligirbHr65KALSeJXc5CyV2JEx0kz_SoGV1kc-dZs06w2qqis4"
+		"value": "YOUR_TOKEN"
 	},
 	{
 		"name": "API_TIMEOUT_MS",
